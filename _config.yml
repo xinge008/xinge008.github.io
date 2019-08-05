@@ -5,7 +5,7 @@ subtitle:
 description: Xinge ZHU's Homopage
 # creator: <a href="http://onev.cat">@onevcat</a>
 
-url: "http://zhuxinge.me"
+url: "http://xingezhu.me"
 
 permalink: /:year/:month/:title/
 
@@ -25,7 +25,7 @@ blog_button:
 #     description: Resume
 # Navigation buttons in the front page.
 nav:
-    - {title: About, description: My Resume, url: 'http://zhuxinge.me/aboutme.html'}
+    - {title: About, description: My Resume, url: 'http://xingezhu.me/aboutme.html'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
