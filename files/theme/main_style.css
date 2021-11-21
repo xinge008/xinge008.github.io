@@ -1,0 +1,775 @@
+
+/* Resets
+--------------------------------------------------------------------------------*/
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+fieldset {
+	border: 0;
+}
+
+a img {
+	border: 0;
+}
+
+.clear {
+	clear: both;
+	font-size: 0;
+	height: 0;
+}
+
+a {
+	color: #2c75b4;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2899fb;
+	text-decoration: none;
+}
+
+/* General Styling and Structure
+--------------------------------------------------------------------------------*/
+
+body {
+	font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #333333;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+
+p {
+	line-height: 1.5;
+	padding: .5em 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #fff;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 1;
+	color: #fff;
+}
+
+h2,
+h3 {
+	line-height: 1.3;
+	padding-bottom: 15px;
+	color: #333333;
+}
+
+h2 {
+	padding: .3em 0;
+}
+
+h4 {
+	font-size: 14px;
+	line-height: 1.2;
+	margin-bottom: 5px;
+}
+
+blockquote {
+	font-style:italic;
+	border-left:4px solid #ddd;
+	margin:10px 0 10px 0;
+	padding-left:20px;
+	line-height:1.5;
+	color:#888;
+}
+
+
+#container {
+	width: 1158px;
+	margin: 0 auto;
+}
+
+#header {
+	padding: 5px 0 6px;
+}
+
+#header-top {
+	padding: 1px 1px;
+}
+
+#logo,
+#logo a {
+	text-decoration: none;
+	font-size: 16px;
+	color: #333;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* Navigation
+--------------------------------------------------------------------------------*/
+
+#navigation {
+	padding: 0 0 0 6px;
+	font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+	line-height: 1;
+	background: url(nav-left.png) no-repeat;
+	position: relative;
+}
+
+#nav-r {
+	background: url(nav-right.png) right top no-repeat;
+	padding-right: 6px;
+}
+
+#nav-content {
+	background: #000 url(nav-bg.png) repeat-x;
+	height: 40px;
+}
+
+#navigation ul {
+}
+
+#navigation li {
+	float: left;
+	position: relative;
+}
+
+#navigation li a {
+	float: left;
+	display: block;
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 2px 0 0;
+	border: 0;
+	outline: 0;
+}
+
+#navigation li a:hover,
+#navigation li#active a {
+	color: #fff;
+	background: url(active-bg.png) bottom center no-repeat;
+}
+
+/* Navigation Drop-Down Menu Customization
+--------------------------------------------------------------------------------*/
+
+#wsite-menus .wsite-menu li a {
+	padding: 7px;
+	color: #fff;
+	background: #4d4d4d;
+	border: 0;
+	border-bottom: 1px solid #6e6e6e;
+}
+
+#wsite-menus .wsite-menu li a:hover {
+	color: #fff;
+	background: #212121;
+}
+
+#navigation #tl,
+#tr,
+#bl,
+#br {
+	position: absolute;
+	width: 4px;
+	height: 4px;
+}
+
+#navigation #tl {
+	background: url(tl.jpg) no-repeat;
+	left: 0;
+	top: 0;
+}
+
+#navigation #tr {
+	background: url(tr.jpg) no-repeat;
+	right: 0;
+	top: 0;
+}
+
+#navigation #bl {
+	background: url(bl.jpg) no-repeat;
+	left: 0;
+	bottom: 0;
+}
+
+#navigation #br {
+	background: url(br.jpg) no-repeat;
+	right: 0;
+	bottom: 0;
+}
+
+/* Header Area
+----------------------------------------------------------------------------*/
+
+#header {
+	width: 100%;
+	height: 2px;
+}
+
+#header,
+#header table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#header td {
+	vertical-align: middle;
+	text-align: left;
+}
+
+#logo {
+	padding: 0px 0 0px 15px;
+}
+
+#header-right {
+	padding: 0 15px 0 10px;
+}
+
+#header-right table {
+	float: right;
+	width: 1px;
+}
+
+#header-right td {
+	padding: 0;
+}
+
+/* TOP RIGHT: Phone Number
+--------------------------------------------------------------------------------*/
+
+#header-right .phone-number .wsite-text {
+	color: #555555;
+	text-align: right;
+	font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+	font-size: 1px;
+	display: block;
+	white-space: nowrap;
+	margin: 0 0 0 1px;
+}
+
+/* TOP RIGHT: Content Area
+--------------------------------------------------------------------------------*/
+
+#header-right .wsite-social {
+	vertical-align: middle;
+	margin: 0 0 0 12px;
+}
+
+
+.wsite-social-item {
+	width: 23px;
+	height: 23px;
+	margin: 0 0 0 3px;
+	background-image:url(social-grey.png);
+}
+
+.wsite-social-facebook {background-position:0 0;}
+	.wsite-social-facebook:hover {background-position:0 -23px;}
+	.wsite-social-facebook:active {background-position:0 -46px;}
+.wsite-social-pinterest {background-position:-23px 0;}
+	.wsite-social-pinterest:hover {background-position:-23px -23px;}
+	.wsite-social-pinterest:active {background-position:-23px -46px;}
+.wsite-social-twitter {background-position:-46px 0;}
+	.wsite-social-twitter:hover {background-position:-46px -23px;}
+	.wsite-social-twitter:active {background-position:-46px -46px;}
+.wsite-social-linkedin {background-position:-69px 0;}
+	.wsite-social-linkedin:hover {background-position:-69px -23px;}
+	.wsite-social-linkedin:active {background-position:-69px -46px;}
+.wsite-social-mail {background-position:-92px 0;}
+	.wsite-social-mail:hover {background-position:-92px -23px;}
+	.wsite-social-mail:active {background-position:-92px -46px;}
+.wsite-social-rss {background-position:-115px 0;}
+	.wsite-social-rss:hover {background-position:-115px -23px;}
+	.wsite-social-rss:active {background-position:-115px -46px;}
+.wsite-social-flickr {background-position:-138px 0;}
+	.wsite-social-flickr:hover {background-position:-138px -23px;}
+	.wsite-social-flickr:active {background-position:-138px -46px;}
+.wsite-social-plus {background-position:-161px 0;}
+	.wsite-social-plus:hover {background-position:-161px -23px;}
+	.wsite-social-plus:active {background-position:-161px -46px;}
+.wsite-social-vimeo {background-position:-184px 0;}
+	.wsite-social-vimeo:hover {background-position:-184px -23px;}
+	.wsite-social-vimeo:active {background-position:-184px -46px;}
+.wsite-social-yahoo {background-position:-207px 0;}
+	.wsite-social-yahoo:hover {background-position:-207px -23px;}
+	.wsite-social-yahoo:active {background-position:-207px -46px;}
+.wsite-social-youtube {background-position:-230px 0;}
+	.wsite-social-youtube:hover {background-position:-230px -23px;}
+	.wsite-social-youtube:active {background-position:-230px -46px;}
+
+
+/* TOP RIGHT: Search Box
+--------------------------------------------------------------------------------*/
+
+#header-right .wsite-search {
+	margin: 0 0 0 15px;
+	width: 205px;
+	height: 26px;
+	vertical-align: middle;
+	background: transparent url(searchForm-bg.png) no-repeat;
+}
+
+#header-right .wsite-search-input {
+	width: 144px;
+	height: 12px;
+	border: 0;
+	padding: 7px 13px !important;
+	background: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #010101;
+	vertical-align: middle;
+	font-size: 12px;
+}
+
+#header-right .wsite-search-button {
+	display: inline-block;
+	width: 35px;
+	height: 26px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	font-size: 0;
+	background: none;
+}
+
+/* Footer
+--------------------------------------------------------------------------------*/
+
+#footer {
+	padding: 15px 0 10px;
+	font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-size: 12px;
+	border-top: 1px solid #aaaaaa;
+	text-align: right;
+	visibility: hidden;
+}
+
+.rights {
+	line-height: 19px;
+	vertical-align: middle;
+}
+
+.wsite-footer {  /* make sure enough space between element footer and attribution */
+	margin-bottom: 15px;
+}
+
+#footer h2 {
+	font-size:18px;
+}
+
+/* Footer Form Customization
+--------------------------------------------------------------------------------*/
+
+.wsite-form-container {
+	margin-top:0px !important;
+	text-align:left !important;
+}
+
+.wsite-footer .wsite-form-label {
+	font-size: 1em !important;
+	padding: 5px 0 2px 0 !important;
+}
+
+.wsite-footer .wsite-form-field {
+	width:320px !important;
+}
+
+.wsite-footer .form-radio-container {
+	font-size:1em !important;
+}
+
+.wsite-footer .wsite-form-input {
+	font-size: 1em !important;
+	width: 100% !important;
+	background-color:#fff;
+}
+
+.wsite-footer .form-select {
+	width: 100% !important;
+	background-color:#fff;
+}
+
+/* main contents styles
+--------------------------------------------------------------------------------*/
+
+#main {
+	padding: 15px 0 0;
+}
+
+#banner-bot {
+	background: url(banner-bot.png) left bottom no-repeat;
+	padding-bottom: 5px;
+}
+
+#banner-top {
+	background: url(banner-top.png) no-repeat;
+	padding-top: 4px;
+}
+
+#banner,
+#banner-left {
+	background: #f7f7f7;
+	padding: 7px 9px;
+	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+	position: relative;
+}
+
+#banner #tl,
+#banner #tr,
+#banner #bl,
+#banner #br {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+}
+
+#banner #tl {
+	background: url(rounded.png) no-repeat;
+	left: 8px;
+	top: 5px;
+}
+
+#banner #tr {
+	background: url(rounded.png) top right no-repeat;
+	right: 9px;
+	top: 6px;
+}
+
+#banner #bl {
+	background: url(rounded.png) left bottom no-repeat;
+	left: 7px;
+	bottom: 5px;
+}
+
+#banner #br {
+	background: url(rounded.png) right bottom no-repeat;
+	right: 7px;
+	bottom: 7px;
+}
+
+.wsite-header {
+}
+
+#content {
+	min-height: 400px;
+	padding: 2px 10px;
+}
+
+/* PAGE TYPE: tall-header
+--------------------------------------------------------------------------------*/
+
+.tall-header-page .wsite-header {  /* the user-editable image */
+	height: 221px;
+	background: url(banner-tall.jpg) no-repeat;
+}
+
+/* PAGE TYPE: short-header
+--------------------------------------------------------------------------------*/
+
+.short-header-page .wsite-header {  /* the user-editable image */
+	height: 151px;
+	background: url(banner-short.jpg) no-repeat;
+}
+
+/* PAGE TYPE: no-header-header
+--------------------------------------------------------------------------------*/
+
+.no-header-page #banner {
+	display: none;
+}
+
+.no-header-page .wsite-header {  /* the user-editable image */
+}
+
+.no-header-page #banner-top {
+	display: none;
+}
+
+.no-header-page #banner-bot {
+	display: none;
+}
+
+/* PAGE TYPE: landing
+--------------------------------------------------------------------------------*/
+
+.landing-page #banner {
+	padding: 0;
+	border-left: none;
+}
+
+#banner-inner {
+	width: 100%;
+	overflow: hidden;
+}
+
+#banner-left {
+	float: left;
+	width: 558px;
+	border-right: none;
+}
+
+#banner-left .wsite-header {  /* the user-editable image */
+	height: 285px;
+	background: url(banner-landing.jpg);
+}
+
+.landing-banner-outer {
+	display: table;
+	#position: relative;
+	overflow: hidden;
+}
+
+.landing-banner-mid {
+	#position: absolute;
+	#top: 50%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.landing-banner-inner {
+	#position: relative;
+	#top: -50%;
+}
+
+#bannerright {
+	float: left;
+	width: 315px;
+	height: 285px;
+	padding: 0 0 0 25px;
+	margin-top: 7px;
+}
+
+#bannerright h2 {
+	font-size: 24px;
+	color: #333333;
+	padding: 0px;
+	line-height: 24px;
+}
+
+#bannerright p {
+	padding: 20px 0px;
+	line-height: 140%;
+}
+
+/* PAGE TYPE: splash
+--------------------------------------------------------------------------------*/
+
+.splash-page .wsite-header {  /* the user-editable image */
+	height: 128px;
+	background: url(banner-splash.jpg) no-repeat;
+}
+
+.splash-page #container {
+	width: 600px;
+}
+
+.splash-page #banner {
+	width: 580px;
+}
+
+.splash-page #banner-bot {
+	background: url(banner-bot-splash.png) left bottom no-repeat;
+	padding-bottom: 5px;
+}
+
+.splash-page #banner-top {
+	background: url(banner-top-splash.png) no-repeat;
+	padding-top: 5px;
+}
+
+.splash-page #header {
+	padding: 15px 0 30px;
+}
+
+.splash-page #header-right {
+	display: none;
+}
+
+.splash-page .search {
+	display: none;
+}
+
+.splash-page .phone-number {
+	display: none;
+}
+
+.splash-page #navigation {
+	display: none;
+}
+
+.splash-page #content {
+	height: auto !important;
+	min-height: 300px;
+}
+
+.splash-page #footer .wsite-social {
+	display: none;
+}
+
+.splash-page #footer {
+	text-align: center;
+}
+
+/* Form Customization
+--------------------------------------------------------------------------------*/
+
+.wsite-form-label {
+	display: inline-block;
+	color: #333333;
+	font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 12px 0 5px 0;
+}
+
+.form-radio-container {
+}
+
+.wsite-form-input, .wsite-search-element-input {
+	font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background: #fff url(field.png) repeat-x;
+	color: #333333;
+	border: 1px solid #d1d1d1;
+	padding: 8px 8px 5px 4px !important;
+	line-height: 1;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.form-select {
+	background: #fff url(field.png) repeat-x;
+	color: #333333;
+	border: 1px solid #d1d1d1;
+	padding: 3px;
+	height: 25px;
+	line-height: 25px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* Buttons
+--------------------------------------------------------------------------------*/
+
+
+
+/* small */
+
+.wsite-button {
+	color: #333333 !important;
+	height: 34px;
+	display: inline-block;
+	font-size: 14px;
+	border: none;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 10px 0 0;
+	background: url(button.png) no-repeat 100% -105px;
+	text-shadow:0 1px 0 rgba(255,255,255,0.8);
+}
+
+.wsite-button:hover {
+	background-position: 100% -140px;
+}
+
+.wsite-button:active {
+	background-position: 100% -175px;
+}
+
+.wsite-button-inner {
+	height: 34px;
+	line-height: 34px;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	text-decoration: none;
+	padding: 0 10px 0 20px;
+	background: url(button.png) no-repeat 0 0;
+}
+
+.wsite-button:hover .wsite-button-inner {
+	background-position: 0 -35px;
+}
+
+.wsite-button:active .wsite-button-inner {
+	background-position: 0 -70px;
+}
+
+/* large */
+
+.wsite-button-large {
+	height: 41px;
+	background: url(button_large.png) no-repeat 100% -126px;
+	padding: 0 10px 0 0;
+}
+
+.wsite-button-large:hover {
+	background-position: 100% -168px;
+}
+
+.wsite-button-large:active {
+	background-position: 100% -210px;
+}
+
+.wsite-button-large .wsite-button-inner {
+	height: 41px;
+	line-height: 41px;
+	padding: 0 10px 0 20px;
+	background: url(button_large.png) no-repeat 0 0;
+}
+
+.wsite-button-large:hover .wsite-button-inner {
+	background-position: 0 -42px;
+}
+
+.wsite-button-large:active .wsite-button-inner {
+	background-position: 0 -84px;
+}
+
+/* highlight */
+
+/*
+Making the highlighted versions of the buttons is easy because we just need
+to switch out the background images. This works because the different button
+states (normal, :hover, :active) have their sprite coordinates in the same places.
+*/
+
+.wsite-button-large.wsite-button-highlight {
+	background-image: url(button_large_highlight.png);
+	text-shadow:0 -1px 0 rgba(0,0,0,0.9);
+}
+
+.wsite-button-large.wsite-button-highlight .wsite-button-inner {
+	background-image: url(button_large_highlight.png);
+}
+
+.wsite-button-highlight {
+	background-image: url(button_highlight.png);
+	color: #fff !important;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.9);
+}
+
+.wsite-button-highlight .wsite-button-inner {
+	background-image: url(button_highlight.png);
+}

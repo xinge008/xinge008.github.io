@@ -1,0 +1,2831 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Xinge Zhu - Homepage</title>
+<meta name="description" content="Dr. Xinge Zhu, PhD in MMLab, the Chinese University of Hong Kong" />
+<meta name="keywords" content="Xinge Zhu; MMLab; CUHK; Computer vision; Machine Learning; CVPR; ICCV; Scene Understanding; 3D" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+		<meta name="google-site-verification" 
+content="H_f9Itsrdoc8WY1KDH1nc6DQ1-6e_Q23MLPGBO0arHA" />
+
+<script type="text/javascript">
+var timeKeeper;
+
+$('#menu').click(function()
+{
+    $('#bibtex').show();
+});
+
+$('#bibtex').click(function()
+{
+    clearTimeout(timeKeeper);                  
+});
+
+$('#menu').focusout(function()
+{
+    timeKeeper = setTimeout(function() {$('#bibtex').hide()}, 150);
+});
+
+$('#menu').attr('tabIndex', -1);
+$('#bibtex').hide();
+</script>
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="https://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="https://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1530535589" title="wsite-theme-css" />
+
+<link href='https://fonts.googleapis.com/css?family=Yantramanav:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:"Times New Roman" !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:"Times New Roman" !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {color:#515151 !important;}
+.wsite-not-footer h2.wsite-content-title a, .wsite-not-footer .paragraph a, .wsite-not-footer blockquote a, #blogTable .blog-sidebar a, #blogTable .blog-comments a, #blogTable .blog-comments-bottom a, #wsite-com-store a, #wsite-com-product-gen a {color:#052ef3 !important;}
+.wsite-menu-default a {font-family:"Yantramanav" !important;text-transform:  none !important;letter-spacing: 0px !important;}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+.wsite-not-footer h2.wsite-content-title a:hover, .wsite-not-footer .paragraph a:hover, .wsite-not-footer blockquote a:hover, #blogTable .blog-sidebar a:hover, #blogTable .blog-comments a:hover, #blogTable .blog-comments-bottom a:hover, #wsite-com-store a:hover, #wsite-com-product-gen a:hover {color:#8d2424 !important;}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {line-height:20px !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-size:16px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {font-size:22px !important;}
+.wsite-menu-default a {font-size:15.5px !important;}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+
+		<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="https://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="https://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.storeCountry = "NL";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "100730443961222929";
+			com_userID = "30604459";</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="https://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"> window._W = window._W || {}; _W.showV2Footer = 0; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"871451071371970207","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},
+				{"id":"605036677414579077","title":"Publications","url":"https:\/\/publications.html","target":"","nav_menu":false,"nonclickable":false}
+				{"id":"605036677414579097","title":"Activities","url":"https:\/\/activities.html","target":"","nav_menu":false,"nonclickable":false}
+
+				],
+			"871451071371970207",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class=" no-header-page  wsite-theme-light  wsite-page-index"><div id="container">
+	<table id="header">
+		<tr>
+			<td id="logo"><span class="wsite-logo">
+
+	
+	<span class="wsite-title-placeholder">&nbsp;</span><span style="display:none">
+	<span style="display:none">Dan Xu's Research Page!</span>
+	</span>
+	
+
+</span></td>
+			<td id="header-right">
+				<table>
+					<tr>
+						<td class="phone-number"></td>
+						<td class="social"></td>
+						<td class="search"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<div id="navigation">
+		<div id="nav-r">
+			<div id="nav-content">
+				<ul class="wsite-menu-default">
+						<li id="871451071371970207" class="wsite-menu-item-wrap">
+							<a
+										href="index.html"
+								class="wsite-menu-item"
+								>
+								Home
+							</a>
+							
+						</li>
+
+						<li id="active" class="wsite-menu-item-wrap">
+							<a
+										href="publications.html"
+								class="wsite-menu-item"
+								>
+								Publications
+							</a>
+							
+						</li>
+
+						<li id="pg605036677414579097" class="wsite-menu-item-wrap">
+							<a
+										href="activity.html"
+								class="wsite-menu-item"
+								>
+								Activities
+							</a>
+							
+						</li>
+
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div id="main">
+		<div id="banner-bot">
+			<div id="banner-top">
+				<div id="banner">
+					<div class="wsite-header"></div>
+					<em id="tl"></em>
+					<em id="tr"></em>
+					<em id="bl"></em>
+					<em id="br"></em>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:33.818493150685%; padding:0 15px;">
+
+
+</div>
+<h2 class="wsite-content-title" style="text-align:left;"><font size="5">Selected Publications</font></h2> 
+</div>
+
+<style>
+a:link {
+  color: #163e5e;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #163e5e;
+}
+
+a:hover {
+  color: #a82e2e;
+}
+
+</style>
+
+<p><strong><font size="4">[<a href="#Conference">Poinc-cloud based Perception</a>]-[<a href="#Journal">Vision based Perception</a>]-[<a href="#Journal2">Trajectory Prediction</a>]-[<a href="https://scholar.google.com.hk/citations?user=yHAcRooAAAAJ" target="_blank">Full Records</a>]</font></strong></p>
+
+<div>
+<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 0px; overflow: hidden; width: 100%;"></div>
+</div>
+
+
+<!--<div id="Pre-Prints" class="paragraph"><strong><font size="4">Pre-Prints:</font></strong></div>-->
+
+<!--<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--	<table class="wsite-multicol-table">-->
+<!--		<tbody class="wsite-multicol-tbody">-->
+<!--			<tr class="wsite-multicol-tr">-->
+<!--				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">-->
+
+					
+					
+<!--New sample start-->
+<!-- </td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+								
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/2020/nips2020_movingslam.jpg" loading="lazy" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+						<div class="paragraph"><font size="3"><span><strong>Moving SLAM: Fully Unsupervised Deep Learning in Dynamic Scenes</strong><br /><strong>Dan Xu</strong>, Andrea Vedaldi, João F. Henriques</span><br/><span style="color:rgb(68, 68, 68)">Arxiv preprint 2021 (<a href="https://arxiv.org/abs/2105.02195" target="_blank">arXiv:2105.02195</a>)</font></div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	</html>
+	</div>
+</div> -->
+
+<!--new sample end--->
+
+<!--New sample start-->
+<!-- </td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+								
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/2020/eccv2020_scopehead.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+						<div class="paragraph"><font size="3"><span><strong>Scope Head for Accurate Localization in Object Detection</strong><br />Geng Zhan, <strong>Dan Xu</strong>, Guo Lu, Wei Wu, Chunhua Shen, Wanli Ouyang</span><br/><span style="color:rgb(68, 68, 68)">Arxiv preprint 2020 (<a href="https://arxiv.org/pdf/2005.04854.pdf" target="_blank">arXiv:2005.04854</a>) </font></div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	</html>
+	</div>
+</div> -->
+
+<!--new sample end--->
+
+
+<!--&lt;!&ndash;New sample start&ndash;&gt;-->
+<!--</td>			</tr>-->
+<!--			</tbody>-->
+<!--		</table>-->
+<!--	</div></div></div>-->
+
+<!--	<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--		<table class="wsite-multicol-table">-->
+<!--			<tbody class="wsite-multicol-tbody">-->
+<!--				<tr class="wsite-multicol-tr">-->
+<!--					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">-->
+<!--								-->
+<!--	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">-->
+<!--	<a>-->
+<!--	<img src="uploads/2021/geometry3Ddetection.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--	</a>-->
+<!--	<div style="display:block;font-size:90%"></div>-->
+<!--	</div></div>-->
+<!--					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">-->
+<!--						<div class="paragraph"><font size="3"><span><strong>Learning Geometry-Guided Depth via Projective Modeling for Monocular 3D Object Detection</strong><br />Yimin Zhang, Xinzhu Ma, Shuai Yi, Jun Hou, Wanli Ouyang, <strong>Dan Xu</strong></span><br/><span style="color:rgb(68, 68, 68)">Arxiv preprint 2021 (<a href="https://arxiv.org/abs/2107.13931" target="_blank">arXiv:2005.04854</a>) </font></div>-->
+
+<!--	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>-->
+<!--	</html>-->
+<!--	</div>-->
+<!--</div>-->
+
+<!--new sample end--->
+
+
+
+
+</td></tr>
+</tbody>
+</table>
+</div></div></div>
+
+<div><div style="height: 10px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 10px; overflow: hidden; width: 100%;"></div></div>
+
+<div id="Conference" class="paragraph"><strong><font size="4">Poinc-cloud based Perception:</font></strong></div>
+<!--<p><strong><font size="3">[<a href="#2021">2021</a>]-[<a href="#2020">2020</a>]-[<a href="#2019">2019</a>]-[<a href="#2018">2018</a>]-[<a href="#2017">2017</a>]-[<a href="#2016">2016</a>]-[<a href="#2015">2015</a>]</font></strong></p>-->
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">	
+
+
+<!--New sample start-->
+</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+								
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/cylinder.png" loading="lazy" alt="Picture" style="width:auto;height:0.2; max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+						<div id=2021 class="paragraph"><font size="3"><span><strong>Cylindrical and Asymmetrical 3D Convolution Networks for LiDAR Segmentation</strong><br /><b>Xinge Zhu*</b>, Hui Zhou*, Tai Wang, Fangzhou Hong, Yuexin Ma, Wei Li, Hongsheng Li, Dahua Lin</span><br/><span style="color:rgb(68, 68, 68)"> IEEE Conference on Computer Vision and Pattern Recognition(</span><em style="color:rgb(68, 68, 68)"><strong>CVPR</strong></em><span style="color:rgb(68, 68, 68)">), 2021, </span></font><span>&#8203;</span><br /><font size="3"><span>(</span><strong><font color="#a82e2e">Oral Presentation; <b>1st place</b> in the leaderboard of SemanticKITTI semantic segmentation (Nov.16 2020).</font></strong><span>)</span></font></div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldiccvleveraging");            
+	                var output = document.getElementById("outputiccvleveraging");
+	                var bibtex = document.getElementById("bibtexiccvleveraging");
+                                     
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+                             
+	            };
+	        </script>
+	        <style> 
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+        
+	    </head>
+	    <body>
+		    <button id="fieldiccvleveraging" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1iccvleveraging" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/2011.10033" style="color:blue" target="_blank">PDF</a> </button>-<button id="field3diccvleveraging" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://github.com/xinge008/Cylinder3D" style="color:blue" target="_blank">GitHub Code</a></button>
+	            <div id="outputiccvleveraging" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexiccvleveraging" style="display:none">
+
+	
+	<pre><br />@inproceedings{iccvleveraging,
+	  title={Cylindrical and Asymmetrical 3D Convolution Networks for LiDAR Segmentation},
+	  author={Xinge Zhu*, Hui Zhou*, Tai Wang, Fangzhou Hong, Yuexin Ma, Wei Li, Hongsheng Li, Dahua Lin},
+	  booktitle={CVPR},
+	  year={2021}
+	}<br /><br /></pre>	    
+
+		 </div>
+        
+	    </body>
+	</html>
+	</div>
+</div>
+<!--new sample end--->
+
+<!--New sample start-->
+</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+								
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/cylinder2.png" loading="lazy" alt="Picture" style="width:auto;height:0.2; max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+					<div id=2021 class="paragraph"><font size="3"><span><strong>Cylindrical and Asymmetrical 3D Convolution Networks for LiDAR-based Perception</strong><br /><b>Xinge Zhu</b>, Hui Zhou, Tai Wang, Fangzhou Hong, Wei Li, Yuexin Ma*, Hongsheng Li, Ruigang Yang, Dahua Lin</span><br/><span style="color:rgb(68, 68, 68)">IEEE Transactions on Pattern Analysis and Machine Intelligence (</span><em style="color:rgb(68, 68, 68)"><strong>TPAMI</strong></em><span style="color:rgb(68, 68, 68)">), 2021</span></font><span>&#8203;</span><br /><font size="3"><span>(</span><strong><font color="#a82e2e">*Corresponding author</font></strong><span>)</span></font></div>
+
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldiccvtang");            
+	                var output = document.getElementById("outputiccvtang");
+	                var bibtex = document.getElementById("bibtexiccvtang");
+                                     
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+                             
+	            };
+	        </script>
+	        <style> 
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+        
+	    </head>
+	    <body>
+		    <button id="fieldiccvtang" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1iccvtang" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/2109.05441" style="color:blue" target="_blank">PDF</a> </button>-<button id="field3diccvleveraging" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://github.com/xinge008/Cylinder3D" style="color:blue" target="_blank">GitHub Code</a></button>
+	            <div id="outputiccvtang" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexiccvtang" style="display:none">
+	
+	<pre><br />@inproceedings{iccvleveraging,
+	  title={Cylindrical and asymmetrical 3d convolution networks for lidar-based perception},
+	  author={Xinge Zhu, Hui Zhou, Tai Wang, Fangzhou Hong, Wei Li, Yuexin Ma*, Hongsheng Li, Ruigang Yang, Dahua Lin},
+	  booktitle={TPAMI},
+	  year={2021}
+	}<br /><br /></pre>	    
+
+		 </div>
+        
+	    </body>
+	</html>
+	</div>
+</div>
+<!--new sample end--->
+
+
+<!--New sample start-->
+</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+								
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/dsnet.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+					<div id=2021 class="paragraph"><font size="3"><span><strong>LiDAR-based Panoptic Segmentation via Dynamic Shifting Network</strong><br />Fangzhou Hong, Hui Zhou, <b>Xinge Zhu</b>, Hongsheng Li, Ziwei Liu</span><br/><span style="color:rgb(68, 68, 68)">IEEE Conference on Computer Vision and Pattern Recognition (</span><em style="color:rgb(68, 68, 68)"><strong>CVPR</strong></em><span style="color:rgb(68, 68, 68)">), 2021 </br> (</span><strong><font color="#a82e2e">Rank 1st in the public leaderboard of SemanticKITTI Panoptic Segmentation (2020-11-16)</font></strong><span>) </span>  </div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldirosmoving");            
+	                var output = document.getElementById("outputirosmoving");
+	                var bibtex = document.getElementById("bibtexirosmoving");
+                                     
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+                             
+	            };
+	        </script>
+	        <style> 
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+        
+	    </head>
+	    <body>
+		    <button id="fieldirosmoving" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1irosmoving" type="text" style="font-size : 13px" tabindex="-1"><a href="http://openaccess.thecvf.com/content/CVPR2021/papers/Hong_LiDAR-Based_Panoptic_Segmentation_via_Dynamic_Shifting_Network_CVPR_2021_paper.pdf" style="color:blue" target="_blank">PDF</a> </button>-<button id="field3dirosmoving" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://github.com/hongfz16/DS-Net" style="color:blue" target="_blank">Github Code</a></button>
+	            <div id="outputirosmoving" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexirosmoving" style="display:none">
+	
+	<pre><br />@inproceedings{Madelving,
+	  title={LiDAR-based Panoptic Segmentation via Dynamic Shifting Network},
+	  author={Fangzhou Hong, Hui Zhou, Xinge Zhu, Hongsheng Li, Ziwei Liu},
+	  booktitle={CVPR},
+	  year={2021}
+	}<br /><br /></pre>	    
+
+		 </div>
+        
+	    </body>
+	</html>
+	</div>
+</div>
+<!--new sample end--->
+
+
+
+<!--New sample start-->
+</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+								
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/icme2021.png" loading="lazy" alt="Picture" style="width:auto;max-width:90%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+						<div id=2021 class="paragraph"><font size="3"><span><strong>Input-Output Balanced Framework for Long-tailed LiDAR Semantic Segmentation</strong><br />Peishan Cong, <b>Xinge Zhu</b>, Yuexin Ma</span><br/><span style="color:rgb(68, 68, 68)">IEEE International Conference on Multimedia and Expo (</span><em style="color:rgb(68, 68, 68)"><strong>ICME</strong></em><span style="color:rgb(68, 68, 68)">), 2021</span></div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldcvprdelving");            
+	                var output = document.getElementById("outputcvprdelving");
+	                var bibtex = document.getElementById("bibtexcvprdelving");
+                                     
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+                             
+	            };
+	        </script>
+	        <style> 
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+        
+	    </head>
+	    <body>
+		<button id="fieldcvprdelving" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1cvprdelving" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/2103.14269" style="color:blue" target="_blank">PDF</a> </button>
+	            <div id="outputcvprdelving" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexcvprdelving" style="display:none">
+	
+	<pre><br />@inproceedings{Madelving,
+	  title={Input-Output Balanced Framework for Long-tailed LiDAR Semantic Segmentation},
+	  author={Peishan Cong, Xinge Zhu, Yuexin Ma},
+	  booktitle={ICME},
+	  year={2021}
+	}<br /><br /></pre>	    
+
+		 </div>
+        
+	    </body>
+	</html>
+	</div>
+</div>
+<!--new sample end--->
+
+
+<!--New sample start-->
+</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+								
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/ssn.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+						<div class="paragraph"><font size="3"><span><strong>SSN: Shape Signature Networks for Multi-class Object Detection from Point Clouds</strong><br /><b>Xinge Zhu</b>, Yuexin Ma, Tai Wang, Yan Xu, Jianping Shi, Dahua Lin</span><br/><span style="color:rgb(68, 68, 68)">European Conference on Computer Vision (</span><em style="color:rgb(68, 68, 68)"><strong>ECCV</strong></em><span style="color:rgb(68, 68, 68)">), 2020</span></div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldcvprdensecorr");            
+	                var output = document.getElementById("outputcvprdensecorr");
+	                var bibtex = document.getElementById("bibtexcvprdensecorr");
+                                     
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+                             
+	            };
+	        </script>
+	        <style> 
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+        
+	    </head>
+	    <body>
+		    <button id="fieldcvprdensecorr" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1cvprdensecorr" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/2004.02774" style="color:blue" target="_blank">PDF</a> </button>-<button id="field2dcvprdensecorr" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://github.com/xinge008/SSN" style="color:blue" target="_blank">Github Code</a></button>
+	            <div id="outputcvprdensecorr" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexcvprdensecorr" style="display:none">
+	
+	<pre><br />@inproceedings{ssneccv,
+	  title={SSN: Shape Signature Networks for Multi-class Object Detection from Point Clouds},
+	  author={Xinge Zhu, Yuexin Ma, Tai Wang, Yan Xu, Jianping Shi, Dahua Lin},
+	  booktitle={ECCV},
+	  year={2020}
+	}<br /><br /></pre>	    
+
+		 </div>
+        
+	    </body>
+	</html>
+	</div>
+</div>
+<!--new sample end--->
+
+
+<!--New sample start-->
+<!-- </td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+								
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/2021/densecorres_cvpr21.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+						<div class="paragraph"><font size="3"><span><strong>Cross-modal Consensus Network for Weakly SupervisedTemporal Action Localization</strong><br />Fa-Ting Hong, Jia-Chang Feng, <strong>Dan Xu</strong>, Ying Shan Wei-Shi Zheng</span><br/><span style="color:rgb(68, 68, 68)">ACM Interntional Conference on Multimedia (</span><em style="color:rgb(68, 68, 68)"><strong>ACM MM</strong></em><span style="color:rgb(68, 68, 68)">), 2021, Chengdu, China</span></div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldfatingacmmm");            
+	                var output = document.getElementById("outputfatingacmmm");
+	                var bibtex = document.getElementById("bibtexfatingacmmm");
+                                     
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+                             
+	            };
+	        </script>
+	        <style> 
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+        
+	    </head>
+	    <body>
+		    <button id="fieldfatingacmmm" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1fatingacmmm" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/2103.16341.pdf" style="color:blue" target="_blank">PDF</a> </button>-<button id="field2dcvprdensecorr" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://tangjiapeng.github.io/LPDC-Net" style="color:blue" target="_blank">Project</a></button>-<button id="field3dfatingacmmm" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://github.com/tangjiapeng/LPDC-Net" style="color:blue" target="_blank">GitHub Code</a></button>
+	            <div id="outputfatingacmmm" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexfatingacmmm" style="display:none">
+
+	            	Fa-Ting Hong1,3,4,6,∗, Jia-Chang Feng1,3,4,7,∗, Dan Xu5, Ying Shan3, Wei-Shi Zheng
+	
+	<pre><br />@inproceedings{TangLearning,
+	  title={Cross-modal Consensus Network for Weakly SupervisedTemporal Action Localization},
+	  author={Hong, Fa-Ting, and Feng, Jia-Chang, and Xu, Dan, and Shan, Ying and  Zhenng, Weishi},
+	  booktitle={ACM MM},
+	  year={2021}
+	}<br /><br /></pre>	    
+
+		 </div>
+        
+	    </body>
+	</html>
+	</div>
+</div> -->
+<!--new sample end--->
+
+					
+<!--New sample start-->
+</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+								
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/reconfig.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+					<div id="2020" class="paragraph"><font size="3"><span><strong>Reconfigurable Voxels: A New Representation for LiDAR-Based Point Clouds</strong><br />Tai Wang, <b>Xinge Zhu</b> , Dahua Lin</span><br/><span style="color:rgb(68, 68, 68)">Conference on Robot Learning (</span><em style="color:rgb(68, 68, 68)"><strong>CoRL</strong></em><span style="color:rgb(68, 68, 68)">), 2020</span></font><span>&#8203;</span><br /><font size="3"><span>(</span><strong><font color="#a82e2e">A new voxel representation</font></strong><span>)</span></font></div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldnipsdgmn");            
+	                var output = document.getElementById("outputnipsdgmn");
+	                var bibtex = document.getElementById("bibtexnipsdgmn");
+                                     
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+                             
+	            };
+	        </script>
+	        <style> 
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+        
+	    </head>
+	    <body>
+		<button id="fieldnipsdgmn" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1nipsdgmn" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/2004.02724" style="color:blue" target="_blank">PDF</a> </button> -<button id="field1nipsdgmn" type="text" style="font-size : 13px" tabindex="-1"> <a href="https://www.youtube.com/watch?v=qooEVl8XF9o&amp;t=4s" style="color:blue" target="_blank">Spotlight Talk</a></button>
+	            <div id="outputnipsdgmn" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexnipsdgmn" style="display:none">
+	
+	<pre><br />@inproceedings{reconfigvoxel,
+	  title={Reconfigurable Voxels: A New Representation for LiDAR-Based Point Clouds},
+	  author={Tai Wang, Xinge Zhu, Dahua Lin},
+	  booktitle={CoRL},
+	  year={2020}
+	}<br /><br /></pre>	    
+
+		 </div>
+        
+	    </body>
+	</html>
+	</div>
+</div>
+<!--new sample end--->
+
+<!--New sample start-->
+
+</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+								
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/corl20.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+	<div class="paragraph"><font size="3"><span><strong>SelfVoxeLO: Self-supervised LiDAR Odometry with Voxel-based Deep Neural Networks
+	</strong><br /> Yan Xu, Zhaoyang Huang, Kwan-Yee Lin, <b>Xinge Zhu</b>, Jianping Shi, Hujun Bao, Guofeng Zhang, Hongsheng Li</span><br/><span style="color:rgb(68, 68, 68)">Conference on Robot Learning  (</span><em style="color:rgb(68, 68, 68)"><strong>CoRL</strong></em><span style="color:rgb(68, 68, 68)">), 2020</span></div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldcvpr2020local");            
+	                var output = document.getElementById("outputcvpr2020local");
+	                var bibtex = document.getElementById("bibtexcvpr2020local");
+                                     
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+                             
+	            };
+	        </script>
+	        <style> 
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+        
+	    </head>
+	    <body>
+		    <button id="fieldcvpr2020local" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1cvpr2020local" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/2010.09343" style="color:blue" target="_blank">PDF</a> </button>
+	            <div id="outputcvpr2020local" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexcvpr2020local" style="display:none">
+	
+	<pre><br />@inproceedings{tang2020local,
+	  title={SelfVoxeLO: Self-supervised LiDAR Odometry with Voxel-based Deep Neural Networks},
+	  author={Yan Xu, Zhaoyang Huang, Kwan-Yee Lin, Xinge Zhu, Jianping Shi, Hujun Bao, Guofeng Zhang, Hongsheng Li},
+	  booktitle={CoRL},
+	  year={2020}
+	}<br /><br /></pre>	    
+
+		 </div>
+        
+	    </body>
+	</html>
+	</div>
+</div>
+
+<!--new sample end--->
+
+
+<!--New sample start-->
+
+</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+								
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/iccv19.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+					<div id="2019" class="paragraph"><font size="3"><span><strong>Depth Completion from Sparse LiDAR Data with Depth-Normal Constraints</strong><br />Yan Xu, <b>Xinge Zhu</b>, Jianping Shi, Guofeng Zhang, Hujun Bao, Hongsheng Li</span><br/><span style="color:rgb(68, 68, 68)">IEEE/CVF International Conference on Computer Vision (</span><em style="color:rgb(68, 68, 68)"><strong>ICCV</strong></em><span style="color:rgb(68, 68, 68)">), 2019</span></font><span>&#8203;</span><br /><font size="3"><span></span></font></div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldbmvc19geometry");            
+	                var output = document.getElementById("outputbmvc19geometry");
+	                var bibtex = document.getElementById("bibtexbmvc19geometry");
+                                     
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+                             
+	            };
+	        </script>
+	        <style> 
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+        
+	    </head>
+	    <body>
+		    <button id="fieldbmvc19geometry" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1bmvc19geometry" type="text" style="font-size : 13px" tabindex="-1"><a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Xu_Depth_Completion_From_Sparse_LiDAR_Data_With_Depth-Normal_Constraints_ICCV_2019_paper.pdf" style="color:blue" target="_blank">PDF</a> </button>
+	            <div id="outputbmvc19geometry" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexbmvc19geometry" style="display:none">
+	
+	<pre><br />@inproceedings{xu2019depth,
+	  title={Depth Completion from Sparse LiDAR Data with Depth-Normal Constraints},
+	  author={Yan Xu, Xinge Zhu, Jianping Shi, Guofeng Zhang, Hujun Bao, Hongsheng Li},
+	  booktitle={ICCV},
+	  year={2019}
+	}<br /><br /></pre>	    
+
+		 </div>
+        
+	    </body>
+	</html>
+	</div>
+</div>
+
+<!--new sample end--->
+
+</td></tr>
+</tbody>
+</table>
+</div></div></div>
+
+<div><div style="height: 10px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 10px; overflow: hidden; width: 100%;"></div></div>
+		<div><div style="height: 10px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 10px; overflow: hidden; width: 100%;"></div></div>
+
+<div id="Journal" class="paragraph"><strong><font size="4">Vision based Perception:</font></strong></div>
+<!--&lt;!&ndash;New sample start&ndash;&gt;-->
+
+<!--</td>			</tr>-->
+<!--			</tbody>-->
+<!--		</table>-->
+<!--	</div></div></div>-->
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/side.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+					<div class="paragraph"><font size="3"><span><strong>SIDE: Center-based Stereo 3D Detector with Structure-aware Instance Depth Estimation</strong><br />Xidong Peng, <b>Xinge Zhu</b>, Tai Wang, Yuexin Ma</span><br/><span style="color:rgb(68, 68, 68)">IEEE Winter Conference on Applications of Computer Vision  (</span><em style="color:rgb(68, 68, 68)"><strong>WACV</strong></em><span style="color:rgb(68, 68, 68)">), 2022</span></font><span>&#8203;</span><br /><font size="3"><span></span></font></div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldiccv19slam");
+	                var output = document.getElementById("outputiccv19slam");
+	                var bibtex = document.getElementById("bibtexiccv19slam");
+
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+
+	            };
+	        </script>
+	        <style>
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+
+	    </head>
+	    <body>
+		    <button id="fieldiccv19slam" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1iccv19slam" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/2108.09663" style="color:blue" target="_blank">PDF</a> </button>
+	            <div id="outputiccv19slam" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexiccv19slam" style="display:none">
+
+	<pre><br />@inproceedings{peng2022side,
+	  title={SIDE: Center-based Stereo 3D Detector with Structure-aware Instance Depth Estimation},
+	  author={Xidong Peng, <b>Xinge Zhu</b>, Tai Wang, Yuexin Ma},
+	  booktitle={WACV},
+	  year={2022}
+	}<br /><br /></pre>
+
+		 </div>
+
+	    </body>
+	</html>
+	</div>
+</div>
+
+<!--&lt;!&ndash;new sample end-&ndash;&gt;-->
+
+					</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/adastereo.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+	<div class="paragraph"><font size="3"><span><strong>AdaStereo: a simple and efficient approach for adaptive stereo matching
+	</strong><br />Xiao Song, Guorun Yang, <b>Xinge Zhu</b>, Hui Zhou, Zhe Wang, Jianping Shi</span><br/><span style="color:rgb(68, 68, 68)">IEEE/CVF Conference on Computer Vision and Pattern Recognition (</span><em style="color:rgb(68, 68, 68)"><strong>CVPR</strong></em><span style="color:rgb(68, 68, 68)">), 2021</span></font><span>&#8203;</span>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("field3dvstructured");
+	                var output = document.getElementById("output3dvstructured");
+	                var bibtex = document.getElementById("bibtex3dvstructured");
+
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+
+	            };
+	        </script>
+	        <style>
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+
+	    </head>
+	    <body>
+		    <button id="field3dvstructured" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field13dvstructured" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/1908.05794.pdf" style="color:blue" target="_blank">PDF</a> </button>
+	            <div id="output3dvstructured" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtex3dvstructured" style="display:none">
+
+	<pre><br />@inproceedings{song2021ada,
+	  title={AdaStereo: a simple and efficient approach for adaptive stereo matching},
+	  author={Xiao Song, Guorun Yang, Xinge Zhu, Hui Zhou, Zhe Wang, Jianping Shi},
+	  booktitle={CVPR},
+	  year={2021}
+	}<br /><br /></pre>
+
+		 </div>
+
+	    </body>
+	</html>
+	</div>
+</div>
+
+<!--&lt;!&ndash;New sample start&ndash;&gt;-->
+
+</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/pgd.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+					<div class="paragraph"><font size="3"><span><strong>Probabilistic and geometric depth: Detecting objects in perspective</strong><br />Tai Wang, <b>Xinge Zhu</b>, Jiangmiao Pang, Dahua Lin</span><br/><span style="color:rgb(68, 68, 68)">Conference on Robot Learning (</span><em style="color:rgb(68, 68, 68)"><strong>CoRL</strong></em><span style="color:rgb(68, 68, 68)">), 2021</div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldiccv19saliency");
+	                var output = document.getElementById("outputiccv19saliency");
+	                var bibtex = document.getElementById("bibtexiccv19saliency");
+
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+
+	            };
+	        </script>
+	        <style>
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+
+	    </head>
+	    <body>
+		    <button id="fieldiccv19saliency" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1iccv19saliency" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/2107.14160" style="color:blue" target="_blank">PDF</a> </button>-<button id="field1iccv19saliency" type="text" style="font-size : 13px" tabindex="-1"><a href="https://github.com/open-mmlab/mmdetection3d" style="color:blue" target="_blank">GitHub Code</a> </button>
+	            <div id="outputiccv19saliency" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexiccv19saliency" style="display:none">
+
+	<pre><br />@inproceedings{wang2021prob,
+	  title={Probabilistic and geometric depth: Detecting objects in perspective},
+	  author={Tai Wang, Xinge Zhu, Jiangmiao Pang, Dahua Lin},
+	  booktitle={CoRL},
+	  year={2021}
+	}<br /><br /></pre>
+
+		 </div>
+
+	    </body>
+	</html>
+	</div>
+</div>
+
+
+					</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/fcos3d.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+					<div class="paragraph"><font size="3"><span><strong>FCOS3D: Fully Convolutional One-Stage Monocular 3D Object Detection</strong><br />Tai Wang, <b>Xinge Zhu</b>, Jiangmiao Pang, Dahua Lin</span><br/><span style="color:rgb(68, 68, 68)">ICCV Workshop on 3D Object Detection from Images(</span><em style="color:rgb(68, 68, 68)"><strong>ICCVW</strong></em><span style="color:rgb(68, 68, 68)">), 2021</div><div><strong><font color="#a82e2e">(Best Paper Award)</font></strong></font></div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldiccv19saliency");
+	                var output = document.getElementById("outputiccv19saliency");
+	                var bibtex = document.getElementById("bibtexiccv19saliency");
+
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+
+	            };
+	        </script>
+	        <style>
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+
+	    </head>
+	    <body>
+		    <button id="fieldiccv19saliency" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1iccv19saliency" type="text" style="font-size : 13px" tabindex="-1"><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Song_AdaStereo_A_Simple_and_Efficient_Approach_for_Adaptive_Stereo_Matching_CVPR_2021_paper.pdf" style="color:blue" target="_blank">PDF</a> </button>-<button id="field1iccv19saliency" type="text" style="font-size : 13px" tabindex="-1"><a href="https://github.com/open-mmlab/mmdetection3d" style="color:blue" target="_blank">GitHub Code</a> </button>
+	            <div id="outputiccv19saliency" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexiccv19saliency" style="display:none">
+
+	<pre><br />@inproceedings{wang2021fcos3d,
+	  title={FCOS3D: Fully Convolutional One-Stage Monocular 3D Object Detection},
+	  author={Tai Wang, Xinge Zhu, Jiangmiao Pang, Dahua Lin},
+	  booktitle={ICCVW},
+	  year={2021}
+	}<br /><br /></pre>
+
+		 </div>
+
+	    </body>
+	</html>
+	</div>
+</div>
+
+<!--&lt;!&ndash;new sample end-&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;New sample start&ndash;&gt;-->
+
+</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/tensor.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+					<div class="paragraph"><font size="3"><span><strong>Tensor Low-Rank Reconstruction for Semantic Segmentation</strong><br />Wanli Chen, <b>Xinge Zhu</b>, Ruoqi Sun, Junjun He, Ruiyu Li, Xiaoyong Shen, Bei Yu</span><br/><span style="color:rgb(68, 68, 68)">European Conference on Computer Vision  (</span><em style="color:rgb(68, 68, 68)"><strong>ECCV</strong></em><span style="color:rgb(68, 68, 68)">), 2020</span></font><span>&#8203;</span>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldcvprcycleincycle");
+	                var output = document.getElementById("outputcvprcycleincycle");
+	                var bibtex = document.getElementById("bibtexcvprcycleincycle");
+
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+
+	            };
+	        </script>
+	        <style>
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+
+	    </head>
+	    <body>
+		    <button id="fieldcvprcycleincycle" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1cvprcycleincycle" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/2008.00490" style="color:blue" target="_blank">PDF</a> </button>-<button id="field2cvprcycleincycle" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://github.com/CWanli/RecoNet" style="color:blue" target="_blank">GitHub Code</a></button>
+	            <div id="outputcvprcycleincycle" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexcvprcycleincycle" style="display:none">
+
+	<pre><br />@inproceedings{chen2020tensor,
+	  title={Tensor Low-Rank Reconstruction for Semantic Segmentation},
+	  author={Wanli Chen, Xinge Zhu, Ruoqi Sun, Junjun He, Ruiyu Li, Xiaoyong Shen, Bei Yu},
+	  booktitle={ECCV},
+	  year={2020}
+	}<br /><br /></pre>
+
+		 </div>
+
+	    </body>
+	</html>
+	</div>
+</div>
+
+<!--&lt;!&ndash;new sample end-&ndash;&gt;-->
+
+<!--&lt;!&ndash;New sample start&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;new sample end-&ndash;&gt;-->
+
+<!--&lt;!&ndash;New sample&ndash;&gt;-->
+
+</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/cvpr2019.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+					<div class="paragraph"><font size="3"><span><strong>Adapting Object Detectors via Selective Cross-domain Alignment</strong><br /><b>Xinge Zhu</b>, Jiangmiao Pang, Ceyuan Yang, Jianping Shi, Dahua Lin</span><br /><span style="color:rgb(68, 68, 68)">IEEE Conference on Computer Vision and Pattern Recognition (</span><em style="color:rgb(68, 68, 68)"><strong>CVPR</strong></em><span style="color:rgb(68, 68, 68)">), 2019 </span></font><span>&#8203;</span>
+<!--<br /><font size="3"><span>(</span><strong><font color="#a82e2e">Oral Presentation, 5.5% acceptance rate</font></strong><span>) (*denotes equal contribution)</span></font></div>-->
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldcvprmulti");
+	                var output = document.getElementById("outputcvprmulti");
+	                var bibtex = document.getElementById("bibtexcvprmulti");
+
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+
+	            };
+	        </script>
+	        <style>
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+
+	    </head>
+	    <body>
+		    <button id="fieldcvprmulti" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1cvprmulti" type="text" style="font-size : 13px" tabindex="-1"><a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhu_Adapting_Object_Detectors_via_Selective_Cross-Domain_Alignment_CVPR_2019_paper.pdf" style="color:blue" target="_blank">PDF</a> </button>-<button id="field3cvprmulti" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://github.com/xinge008/SCDA" style="color:blue" target="_blank">GitHub Code</a></button>
+	            <div id="outputcvprmulti" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexcvprmulti" style="display:none">
+
+	<pre><br />@inproceedings{zhu2019adapting,
+	  title={Adapting Object Detectors via Selective Cross-domain Alignment},
+	  author={Xinge Zhu, Jiangmiao Pang, Ceyuan Yang, Jianping Shi, Dahua Lin},
+	  booktitle={CVPR},
+	  year={2019}
+	}<br /><br /></pre>
+
+		 </div>
+
+	    </body>
+	</html>
+	</div>
+</div>
+
+<!--&lt;!&ndash;new sample-&ndash;&gt;-->
+
+</td>			</tr>
+			</tbody>
+		</table>
+	</div></div></div>
+
+	<div class="wsite-spacer" style="height:10px;"></div>
+
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table class="wsite-multicol-table">
+			<tbody class="wsite-multicol-tbody">
+				<tr class="wsite-multicol-tr">
+					<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+
+	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+	<a>
+	<img src="uploads/new/zxg_css/img/cvpr2019-2.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div></div>
+					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+					<div id="2018" class="paragraph"><font size="3"><span><strong> Not all areas are equal: Transfer learning for semantic segmentation via hierarchical region selection </strong><br />Ruoqi Sun*, <b>Xinge Zhu</b>*, Chongruo Wu, Chen Huang, Jianping Shi, Lizhuang Ma</span><br /><span style="color:rgb(68, 68, 68)">IEEE Conference on Computer Vision and Pattern Recognition (</span><em style="color:rgb(68, 68, 68)"><strong>CVPR</strong></em><span style="color:rgb(68, 68, 68)">), 2019 </span></font><span>&#8203;</span> <br /><font size="3"><span>(</span><strong><font color="#a82e2e">Oral Presentation, 5.5% acceptance rate</font></strong><span>) (*denotes equal contribution)</span></font></div>
+
+	<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+	        <title>Javascript test1</title>
+	        <script type="text/javascript" language="javascript">
+	            window.addEventListener("load", func4);
+	            function func4()
+	            {
+	                var field = document.getElementById("fieldmmge");
+	                var output = document.getElementById("outputmmge");
+	                var bibtex = document.getElementById("bibtexmmge");
+
+	                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+	                field.onblur = function() { output.innerHTML = ""; };
+	                output.onblur = function() { output.innerHTML = ""; };
+
+	            };
+	        </script>
+	        <style>
+	              button[type=text]:disabled {
+	                    pointer-events: none;
+	                    background: #dddddd;
+	                    opacity: 0.6
+	              }
+	        </style>
+
+
+	    </head>
+	    <body>
+	            <button id="fieldmmge" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1mmge" type="text" style="font-size : 13px" tabindex="-1"><a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Not_All_Areas_Are_Equal_Transfer_Learning_for_Semantic_Segmentation_CVPR_2019_paper.pdf" style="color:blue" target="_blank">PDF</a> </button>-<button id="field2dvun" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://github.com/Ha0Tang/GestureGAN" style="color:blue" target="_blank">GitHub Code</a></button>
+
+	            <div id="outputmmge" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+	            <div id="bibtexmmge" style="display:none">
+
+	<pre><br />@inproceedings{run2019notall,
+	  title={Not all areas are equal: Transfer learning for semantic segmentation via hierarchical region selection},
+	  author={Ruoqi Sun*, Xinge Zhu*, Chongruo Wu, Chen Huang, Jianping Shi, Lizhuang Ma},
+	  booktitle={CVPR},
+	  year={2019}
+	}<br /><br /></pre>
+
+		 </div>
+
+	    </body>
+	</html>
+	</div>
+</div>
+
+
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:10px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+
+
+
+
+<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/new/zxg_css/img/eccv2018_1.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+				</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+				<div class="paragraph"><font size="3"><span><strong>Penalizing Top Performers: Conservative Loss for Semantic Segmentation Adaptation</strong><br /><b>Xinge Zhu</b>, Hui Zhou, Ceyuan Yang, Jianping Shi, Dahua Lin</span><br /><span style="color:rgb(68, 68, 68)">European Conference on Computer Vision (</span><em style="color:rgb(68, 68, 68)"><strong>ECCV</strong></em><span style="color:rgb(68, 68, 68)">), 2018.</span></font><span>&#8203;</span></div>
+
+<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+        <title>Javascript test1</title>
+        <script type="text/javascript" language="javascript">
+            window.addEventListener("load", func4);
+            function func4()
+            {
+                var field = document.getElementById("field3dvun");
+                var output = document.getElementById("output3dvun");
+                var bibtex = document.getElementById("bibtex3dvun");
+
+                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+                field.onblur = function() { output.innerHTML = ""; };
+                output.onblur = function() { output.innerHTML = ""; };
+
+            };
+        </script>
+        <style>
+              button[type=text]:disabled {
+                    pointer-events: none;
+                    background: #dddddd;
+                    opacity: 0.6
+              }
+        </style>
+
+
+    </head>
+    <body>
+            <button id="field3dvun" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field13dvun" type="text" style="font-size : 13px" tabindex="-1"><a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Xinge_Zhu_Penalizing_Top_Performers_ECCV_2018_paper.pdf" style="color:blue" target="_blank">PDF</a> </button>
+            <div id="output3dvun" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+            <div id="bibtex3dvun" style="display:none">
+
+<pre><br />@inproceedings{zhu2018pena,
+  title={Penalizing Top Performers: Conservative Loss for Semantic Segmentation Adaptation},
+  author={Xinge Zhu, Hui Zhou, Ceyuan Yang, Jianping Shi, Dahua Lin},
+  booktitle={ECCV},
+  year={2018}
+}<br /><br /></pre>
+
+	 </div>
+
+    </body>
+</html>
+</div>
+
+
+
+</div>
+
+
+
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:10px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+
+
+
+<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/new/zxg_css/img/3dv.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+
+
+				</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+
+
+
+<div class="paragraph"><font size="3"><span><strong>Generative Adversarial Frontal View to Bird View Synthesis</strong><br /><b>Xinge Zhu</b>, Zhichao Yin, Jianping Shi, Hongsheng Li, Dahua Lin</span><br /><span style="color:rgb(68, 68, 68)">International Conference on 3D Vision (</span><em style="color:rgb(68, 68, 68)"><strong>3DV</strong></em><span style="color:rgb(68, 68, 68)">), 2018 (Spotlight)</span></font><span>&#8203;</span></div>
+
+<div><div id="127594442545404463" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+        <title>Javascript test1</title>
+        <script type="text/javascript" language="javascript">
+            window.addEventListener("load", func4);
+            function func4()
+            {
+                var field = document.getElementById("fieldcvprpad");
+                var output = document.getElementById("outputcvprpad");
+                var bibtex = document.getElementById("bibtexcvprpad");
+
+                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+                field.onblur = function() { output.innerHTML = ""; };
+                output.onblur = function() { output.innerHTML = ""; };
+
+            };
+        </script>
+        <style>
+              button[type=text]:disabled {
+                    pointer-events: none;
+                    background: #dddddd;
+                    opacity: 0.6
+              }
+        </style>
+
+
+    </head>
+    <body>
+            <button id="fieldcvprpad" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1cvprpad" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/1808.00327" style="color:blue" target="_blank">PDF</a> </button>-<button id="field2dvun" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://github.com/xinge008/BridgeGAN" style="color:blue" target="_blank">GitHub Code</a></button>
+            <div id="outputcvprpad" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+            <div id="bibtexcvprpad" style="display:none">
+
+<pre><br />@inproceedings{zhu2018gene,
+  title={Generative Adversarial Frontal View to Bird View Synthesis},
+  author={Xinge Zhu, Zhichao Yin, Jianping Shi, Hongsheng Li, Dahua Lin},
+  booktitle={3DV},
+  year={2018}
+}<br /><br /></pre>
+
+	 </div>
+
+    </body>
+</html>
+</div>
+</div>
+
+
+</td></tr>
+</tbody>
+</table>
+</div></div></div>
+
+
+<div><div style="height: 10px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 10px; overflow: hidden; width: 100%;"></div></div>
+		<div><div style="height: 10px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 10px; overflow: hidden; width: 100%;"></div></div>
+
+<div id="Journal2" class="paragraph"><strong><font size="4">Trajectory Prediction:</font></strong></div>
+
+
+<!--</div>-->
+
+
+
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:10px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+
+
+
+<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/new/zxg_css/img/eccv2020_1.png" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+
+				</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+
+
+
+<div class="paragraph"><font size="3"><span><strong>AutoTrajectory: Label-free Trajectory Extraction and Prediction from Videos using Dynamic Points</strong></span><br /> Yuexin Ma*, <b>Xinge Zhu</b>*, Xinjing Cheng, Ruigang Yang, Jiming Liu, Dinesh Manocha</font><br />&#8203;<font size="3"><span style="color:rgb(68, 68, 68)">European Conference on Computer Vision (</span><em style="color:rgb(68, 68, 68)"><strong>ECCV</strong></em><span style="color:rgb(68, 68, 68)">), 2020</span></font> <br /><font size="3"><span>(</span><strong><font color="#a82e2e">* denote equal contributions</font></strong><span>)</span></font></div>
+
+<div><div id="954410531964070256" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+        <title>Javascript test1</title>
+        <script type="text/javascript" language="javascript">
+            window.addEventListener("load", func4);
+            function func4()
+            {
+                var field = document.getElementById("fieldcvprstructured");
+                var output = document.getElementById("outputcvprstructured");
+                var bibtex = document.getElementById("bibtexcvprstructured");
+
+                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+                field.onblur = function() { output.innerHTML = ""; };
+                output.onblur = function() { output.innerHTML = ""; };
+
+            };
+        </script>
+      <style>
+              button[type=text]:disabled {
+                    pointer-events: none;
+                    opacity: 0.6
+              }
+        </style>
+    </head>
+    <body>
+            <button id="fieldcvprstructured" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1cvprstructured" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/2007.05719" style="color:blue" target="_blank">PDF</a> </button>
+            <div id="outputcvprstructured" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+            <div id="bibtexcvprstructured" style="display:none">
+
+<pre><br />@inproceedings{ma2020atuotraj,
+  title={AutoTrajectory: Label-free Trajectory Extraction and Prediction from Videos using Dynamic Points},
+  author={Yuexin Ma*, Xinge Zhu*, Xinjing Cheng, Ruigang Yang, Jiming Liu, Dinesh Manocha},
+  booktitle={ECCV},
+  year={2020}
+}<br /><br /></pre>
+
+	 </div>
+
+    </body>
+</html>
+</div>
+
+
+
+</div>
+
+
+
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:10px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">
+
+
+
+<div><div class="wsite-image wsite-image-border-none" style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="uploads/new/zxg_css/img/aaai2019.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+
+				</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">
+
+
+
+<div class="paragraph"><span><font size="3"><strong>TrafficPredict: Trajectory prediction for heterogeneous traffic-agents</strong></font></span><br /><font size="3">Yuexin Ma*, <b>Xinge Zhu*</b>, Sibo Zhang, Ruigang Yang, Wenping Wang, Dinesh Manocha</font><br /><span>&#8203;</span><font size="3"><span style="color:rgb(68, 68, 68)">Proceedings of the AAAI Conference on Artificial Intelligence (</span><em style="color:rgb(68, 68, 68)"><strong>AAAI</strong></em><span style="color:rgb(68, 68, 68)">), 2019</span></font><br /><font size="3"><span>(</span><strong><font color="#a82e2e">Oral Presentation; * denote equal contributions</font></strong><span>)</span></font></div>
+
+<div><div id="629361107969858956" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>
+        <title>Javascript test1</title>
+        <script type="text/javascript" language="javascript">
+            window.addEventListener("load", func4);
+            function func4()
+            {
+                var field = document.getElementById("fieldcvprGroup");
+                var output = document.getElementById("outputcvprGroup");
+                var bibtex = document.getElementById("bibtexcvprGroup");
+
+                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};
+                field.onblur = function() { output.innerHTML = ""; };
+                output.onblur = function() { output.innerHTML = ""; };
+
+            };
+        </script>
+      <style>
+              button[type=text]:disabled {
+                    pointer-events: none;
+                    opacity: 0.6
+              }
+        </style>
+    </head>
+    <body>
+            <button id="fieldcvprGroup" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1cvprGroup" type="text" style="font-size : 13px" tabindex="-1"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/4569/4447" style="color:blue" target="_blank">PDF</a> </button>
+            <div id="outputcvprGroup" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>
+            <div id="bibtexcvprGroup" style="display:none">
+
+<pre><br />@inproceedings{ma2019traffic,
+  title={TrafficPredict: Trajectory Prediction for Heterogeneous Traffic-agents},
+  author={Yuexin Ma*, Xinge Zhu*, Sibo Zhang, Ruigang Yang, Wenping Wang, Dinesh Manocha},
+  booktitle={AAAI},
+  year={2019}
+}<br /><br /></pre>
+
+	 </div>
+
+    </body>
+</html>
+</div>
+
+
+
+<!--</div>-->
+
+
+<!--					-->
+<!--				</td>			</tr>-->
+<!--		</tbody>-->
+<!--	</table>-->
+<!--</div></div></div>-->
+
+<!--<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--	<table class="wsite-multicol-table">-->
+<!--		<tbody class="wsite-multicol-tbody">-->
+<!--			<tr class="wsite-multicol-tr">-->
+<!--				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">-->
+<!--<a>-->
+<!--<img src="uploads/2018/face_1_orig.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--</a>-->
+<!--<div style="display:block;font-size:90%"></div>-->
+<!--</div></div>-->
+
+
+<!--					-->
+<!--				</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div class="paragraph"><font size="3"><strong>Every Smile is Unique: Landmark-Guided Diverse Smile Generation</strong><br />&#8203;Wei Wang,&nbsp;</font><span><font size="3">Xavier Alameda-Pineda, <strong>Dan Xu</strong>, Pascal Fua, Elisa Ricci, Nicu Sebe</font><br />&#8203;</span><font size="3"><span style="color:rgb(68, 68, 68)">IEEE Conference on Computer Vision and Pattern Recognition (</span><em style="color:rgb(68, 68, 68)"><strong>CVPR</strong></em><span style="color:rgb(68, 68, 68)">), 2018, Salt Lake City, USA</span></font></div>-->
+
+<!--<div><div id="563904327409136850" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>-->
+<!--    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>-->
+<!--        <title>Javascript test1</title>-->
+<!--        <script type="text/javascript" language="javascript">-->
+<!--            window.addEventListener("load", func4);-->
+<!--            function func4()-->
+<!--            {-->
+<!--                var field = document.getElementById("fieldcvprEvery");            -->
+<!--                var output = document.getElementById("outputcvprEvery");-->
+<!--                var bibtex = document.getElementById("bibtexcvprEvery");-->
+<!--                                     -->
+<!--                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                field.onblur = function() { output.innerHTML = ""; };-->
+<!--                output.onblur = function() { output.innerHTML = ""; };-->
+<!--                             -->
+<!--            };-->
+<!--        </script>-->
+<!--      <style> -->
+<!--              button[type=text]:disabled {-->
+<!--                    pointer-events: none;-->
+<!--                    opacity: 0.6-->
+<!--              }-->
+<!--        </style>-->
+<!--    </head>-->
+<!--    <body>-->
+<!--            <button id="fieldcvprEvery" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1cvprEvery" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/abs/1802.01873" style="color:blue" target="_blank">PDF</a> </button>-->
+<!--            <div id="outputcvprEvery" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>-->
+<!--            <div id="bibtexcvprEvery" style="display:none">-->
+<!--          -->
+<!--<pre><br />@inproceedings{wang2018Every,-->
+<!--  title={Every Smile is Unique: Landmark-Guided Diverse Smile Generation},-->
+<!--  author={Wei, Wang and Alameda-Pineda, Xavier and Xu, Dan and Fua, Pascal and Ricci, Elisa and Sebe, Nicu},-->
+<!--  booktitle={CVPR},-->
+<!--  year={2018}-->
+<!--}<br /><br /></pre>-->
+
+<!--	 </div>-->
+<!--        -->
+<!--    </body>-->
+<!--</html>-->
+<!--</div>-->
+
+
+
+<!--</div>-->
+
+
+<!--					-->
+<!--				</td>			</tr>-->
+<!--		</tbody>-->
+<!--	</table>-->
+<!--</div></div></div>-->
+
+<!--<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--	<table class="wsite-multicol-table">-->
+<!--		<tbody class="wsite-multicol-tbody">-->
+<!--			<tr class="wsite-multicol-tr">-->
+<!--				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">-->
+<!--<a>-->
+<!--<img src="uploads/2018/nips_orig.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--</a>-->
+<!--<div style="display:block;font-size:90%"></div>-->
+<!--</div></div>-->
+
+
+<!--					-->
+<!--				</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div id="2017" class="paragraph"><strong><span><font size="3">Learning Deep Structured Multi-Scale Features using&nbsp;Attention-Gated CRFs for Contour Prediction</font></span></strong><br /><strong><font size="3">Dan Xu</font></strong><font size="3">, Wanli Ouyang, </font><span><font size="3">Xavier Alameda-Pineda,</font>&nbsp;</span><font size="3">Elisa Ricci,&nbsp;<span>Xiaogang Wang, Nicu Sebe<br />The Thirty-first Annual Conference on Neural Information Processing Systems (<em><strong>NIPS</strong></em>), 2017, Long Beach, USA</span></font></div>-->
+
+<!--<div><div id="984615682342803855" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>-->
+<!--    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>-->
+<!--        <title>Javascript test1</title>-->
+<!--        <script type="text/javascript" language="javascript">-->
+<!--            window.addEventListener("load", func4);-->
+<!--            function func4()-->
+<!--            {-->
+<!--                var field = document.getElementById("fieldnips");            -->
+<!--                var output = document.getElementById("outputnips");-->
+<!--                var bibtex = document.getElementById("bibtexnips");-->
+<!--                                     -->
+<!--                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                field.onblur = function() { output.innerHTML = ""; };-->
+<!--                output.onblur = function() { output.innerHTML = ""; };-->
+<!--                             -->
+<!--            };-->
+<!--        </script>-->
+<!--    </head>-->
+<!--    <body>-->
+<!--            <button id="fieldnips" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1nips" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/abs/1801.00524" style="color:blue" target="_blank">PDF</a> </button>-<button id="field2nips" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://github.com/danxuhk/AttentionGatedMulti-ScaleFeatureLearning" style="color:blue" target="_blank">Project</a></button>-->
+<!--            <div id="outputnips" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>-->
+<!--            <div id="bibtexnips" style="display:none">-->
+<!--          -->
+<!--<pre><br />@inproceedings{xu2017learning,-->
+<!--  title={Learning Deep Structured Multi-Scale Features using Attention-Gated CRFs for Contour Prediction},-->
+<!--  author={Xu, Dan and Ouyang, Wanli and Alameda-Pineda, Xavier and Ricci, Elisa and Wang, Xiaogang and Sebe, Nicu},-->
+<!--  booktitle={NIPS},-->
+<!--  year={2017}-->
+<!--}<br /><br /></pre>-->
+
+<!--	 </div>-->
+<!--        -->
+<!--    </body>-->
+<!--</html>-->
+<!--</div>-->
+
+
+
+<!--</div>-->
+
+
+<!--					-->
+<!--				</td>			</tr>-->
+<!--		</tbody>-->
+<!--	</table>-->
+<!--</div></div></div>-->
+
+<!--<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--	<table class="wsite-multicol-table">-->
+<!--		<tbody class="wsite-multicol-tbody">-->
+<!--			<tr class="wsite-multicol-tr">-->
+<!--				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">-->
+<!--<a>-->
+<!--<img src="uploads/2017/depth_2_orig.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--</a>-->
+<!--<div style="display:block;font-size:90%"></div>-->
+<!--</div></div>-->
+
+
+<!--					-->
+<!--				</td>				<td class="wsite-multicol-col" style="width:74.338624338624%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div class="paragraph"><font size="3"><strong>Multi-Scale Continuous CRFs as Sequential Deep Networks for Monocular Depth Estimation</strong><br /><strong>Dan Xu</strong>, Elisa Ricci, Wanli Ouyang, Xiaogang Wang, Nicu Sebe<br />&#8203;<span style="color:rgb(68, 68, 68)">IEEE Conference on Computer Vision and Pattern Recognition (</span><em style="color:rgb(68, 68, 68)"><strong>CVPR</strong></em><span style="color:rgb(68, 68, 68)">), 2017, Hawaii, USA</span><br/>(<strong><font color="#a82e2e">Spotlight Presentation, 8% acceptance rate</font></strong>)</font></div>-->
+
+<!--<div><div id="931079758642117577" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>-->
+<!--    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>-->
+<!--        <title>Javascript test1</title>-->
+<!--        <script type="text/javascript" language="javascript">-->
+<!--            window.addEventListener("load", func4);-->
+<!--            function func4()-->
+<!--            {-->
+<!--                var field = document.getElementById("fieldl");            -->
+<!--                var output = document.getElementById("outputl");-->
+<!--                var bibtex = document.getElementById("bibtexl");-->
+<!--                                     -->
+<!--                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                field.onblur = function() { output.innerHTML = ""; };-->
+<!--                output.onblur = function() { output.innerHTML = ""; };-->
+<!--                             -->
+<!--            };-->
+<!--        </script>-->
+<!--    </head>-->
+<!--    <body>-->
+<!--            <button id="fieldl" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1l" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/1704.02157.pdf" style="color:blue" target="_blank">PDF</a> </button>-<button id="field2l" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://github.com/danxuhk/ContinuousCRF-CNN" style="color:blue" target="_blank">CODE</a></button>-<button id="field1lnips" type="text" style="font-size : 13px" tabindex="-1"><a href="https://youtu.be/4mdqh6YGhgE" style="color:blue" target="_blank">Presentation</a> </button>-->
+<!--            <div id="outputl" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>-->
+<!--            <div id="bibtexl" style="display:none">-->
+<!--          -->
+<!--<pre><br />@inproceedings{xu2017multi,-->
+<!--  title={Multi-Scale Continuous CRFs as Sequential Deep Networks for Monocular Depth Estimation},-->
+<!--  author={Xu, Dan and Ricci, Elisa and Ouyang, Wanli and Wang, Xiaogang and Sebe, Nicu},-->
+<!--  booktitle={CVPR},-->
+<!--  year={2017}-->
+<!--}<br /><br /></pre>-->
+
+<!--	 </div>-->
+<!--        -->
+<!--    </body>-->
+<!--</html>-->
+<!--</div>-->
+
+
+
+<!--</div>-->
+
+
+<!--					-->
+<!--				</td>			</tr>-->
+<!--		</tbody>-->
+<!--	</table>-->
+<!--</div></div></div>-->
+
+<!--<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--	<table class="wsite-multicol-table">-->
+<!--		<tbody class="wsite-multicol-tbody">-->
+<!--			<tr class="wsite-multicol-tr">-->
+<!--				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">-->
+<!--<a>-->
+<!--<img src="uploads/2017/pedestrian1_orig.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--</a>-->
+<!--<div style="display:block;font-size:90%"></div>-->
+<!--</div></div>-->
+
+
+<!--					-->
+<!--				</td>				<td class="wsite-multicol-col" style="width:74.338624338624%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div class="paragraph"><font size="3"><strong>Learning Cross-Modal Deep Representations for Robust Pedestrian Detection</strong><br /><strong>Dan Xu</strong>, Wanli Ouyang, Elisa Ricci, Xiaogang Wang, Nicu Sebe<br /><span style="color: rgb(68, 68, 68);">IEEE Conference on Computer Vision and Pattern Recognition (</span><em style="color: rgb(68, 68, 68);"><strong>CVPR</strong></em><span style="color: rgb(68, 68, 68);">), 2017, Hawaii, USA</span></font></div>-->
+
+<!--<div><div id="948871120991619121" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>-->
+<!--    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>-->
+<!--        <title>Javascript test</title>-->
+<!--        <script type="text/javascript" language="javascript">-->
+<!--            window.addEventListener("load", func5); -->
+<!--            function func5()-->
+<!--            {-->
+<!--                var field = document.getElementById("field");            -->
+<!--                var output = document.getElementById("output");-->
+<!--                var bibtex = document.getElementById("bibtex");-->
+<!--                                     -->
+<!--                field.onfocus = function() { output.innerHTML = bibtex.innerHTML; };-->
+<!--                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                field.onblur = function() { output.innerHTML = ""; };-->
+<!--                output.onblur = function() { output.innerHTML = ""; };-->
+<!--                             -->
+<!--            };-->
+<!--        </script>-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        -->
+<!--            <button id="field" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/1704.02431.pdf" style="color:blue" target="_blank">PDF</a></button>-->
+<!--            <div id="output" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>-->
+<!--            <div id="bibtex" style="display:none">-->
+
+<!--<pre><br />@inproceedings{xu2017learning,-->
+<!--  title={Learning Cross-Modal Deep Representations for Robust Pedestrian Detection},-->
+<!--  author={Xu, Dan and Ouyang, Wanli and Ricci, Elisa and Wang, Xiaogang and Sebe, Nicu},-->
+<!--  booktitle={CVPR},-->
+<!--  year={2017}-->
+<!--}<br /><br /></pre>-->
+
+<!--            </div>-->
+<!--        -->
+<!--    </body>-->
+<!--</html>-->
+<!--</div>-->
+
+
+
+<!--</div>-->
+
+
+<!--					-->
+<!--				</td>			</tr>-->
+<!--		</tbody>-->
+<!--	</table>-->
+<!--</div></div></div>-->
+
+<!--<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--	<table class="wsite-multicol-table">-->
+<!--		<tbody class="wsite-multicol-tbody">-->
+<!--			<tr class="wsite-multicol-tr">-->
+<!--				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">-->
+<!--<a>-->
+<!--<img src="uploads/2017/virality_1.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--</a>-->
+<!--<div style="display:block;font-size:90%"></div>-->
+<!--</div></div>-->
+
+
+<!--					-->
+<!--				</td>				<td class="wsite-multicol-col" style="width:74.338624338624%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div class="paragraph"><font size="3"><strong>Viraliency: Pooling Local Virality&nbsp;</strong><br />Xavier Alameda-Pineda,&nbsp;Andrea Pilzer,&nbsp;<strong>Dan Xu</strong>,&nbsp;Elisa Ricci,&nbsp;Nicu Sebe<br /><span style="color:rgb(68, 68, 68)">IEEE Conference on Computer Vision and Pattern Recognition (<em><strong>CVPR</strong></em>), 2017, Hawaii, USA</span></font><span style="color:rgb(255, 255, 255)">i</span><font size="2">&#8203;</font></div>-->
+
+<!--<div><div id="859291792931286364" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>-->
+<!--    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>-->
+<!--        <title>Javascript test</title>-->
+<!--        <script type="text/javascript" language="javascript">-->
+<!--            window.addEventListener("load", func6); -->
+<!--            function func6()-->
+<!--            {-->
+<!--                var field = document.getElementById("field6");            -->
+<!--                var output = document.getElementById("output6");-->
+<!--                var bibtex = document.getElementById("bibtex6");-->
+<!--                                     -->
+<!--                field.onfocus = function() { output.innerHTML = bibtex.innerHTML; };-->
+<!--                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                field.onblur = function() { output.innerHTML = ""; };-->
+<!--                output.onblur = function() { output.innerHTML = ""; };-->
+<!--                             -->
+<!--            };-->
+<!--        </script>-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        -->
+<!--            <button id="field6" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/1703.03937.pdf" style="color:blue" target="_blank">PDF</a></button>-<button id="field2l" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://github.com/xavirema/lena_pooling" style="color:blue" target="_blank">CODE</a></button>-->
+<!--            <div id="output6" style="background:#E7ECEF; border:0px; border-color: black; overflow:auto" tabindex="-1"></div>-->
+<!--            <div id="bibtex6" style="display:none">-->
+
+<!--<pre><br />@inproceedings{alameda2017viraliency,-->
+<!--  title={Viraliency: Pooling Local Virality},-->
+<!--  author={Alameda-Pineda, Xavier and Pilzer, Andrea and Xu, Dan and Ricci, Elisa and Sebe, Nicu},-->
+<!--  booktitle={CVPR},-->
+<!--  year={2017}-->
+<!--}<br /><br /></pre>-->
+
+<!--            </div>-->
+<!--        -->
+<!--    </body>-->
+<!--</html>-->
+<!--</div>-->
+
+
+
+<!--</div>-->
+
+
+<!--					-->
+<!--				</td>			</tr>-->
+<!--		</tbody>-->
+<!--	</table>-->
+<!--</div></div></div>-->
+
+<!--<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--	<table class="wsite-multicol-table">-->
+<!--		<tbody class="wsite-multicol-tbody">-->
+<!--			<tr class="wsite-multicol-tr">-->
+<!--				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">-->
+<!--<a>-->
+<!--<img src="uploads/2016/accv_orig.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--</a>-->
+<!--<div style="display:block;font-size:90%"></div>-->
+<!--</div></div>-->
+
+
+
+<!--					-->
+<!--				</td>				<td class="wsite-multicol-col" style="width:74.338624338624%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div id="2016" class="paragraph"><font size="3"><strong>Multi-Paced Dictionary Learning for Cross-Domain Retrieval and Recognition</strong><br /><strong>Dan Xu</strong>, Jingkuan Song, Xavier Alameda-Pineda, Elisa Ricci, Nicu Sebe<br />23rd International Conference on Pattern Recognition (<em><strong>ICPR</strong></em>), 2016, Cancun, Mexico<br />(<strong><font color="#a82e2e">Oral Presentation, Best Scientific Paper Award!!!</font></strong>)</font></div>-->
+
+<!--<div><div id="873054486907446510" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>-->
+<!--    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>-->
+<!--        <title>Javascript test1</title>-->
+<!--        <script type="text/javascript" language="javascript">-->
+<!--            window.addEventListener("load", func2);-->
+<!--            function func2()-->
+<!--            {-->
+<!--                var field = document.getElementById("fieldm");            -->
+<!--                var output = document.getElementById("outputm");-->
+<!--                var bibtex = document.getElementById("bibtexm");-->
+<!--                                     -->
+<!--                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                field.onblur = function() { output.innerHTML = ""; };-->
+<!--                output.onblur = function() { output.innerHTML = ""; };-->
+<!--                             -->
+<!--            };-->
+<!--        </script>-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        -->
+<!--            <button id="fieldm" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1m" type="text" style="font-size : 13px" tabindex="-1"><a href="https://xavirema.eu/wp-content/papercite-data/pdf/Xu-ICPR-2016.pdf" style="color:blue" target="_blank">PDF</a> </button>-<button id="field2m" type="text" style="font-size : 13px; color:blue" tabindex="-1">CODE</button>-->
+<!--            <div id="outputm" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>-->
+<!--            <div id="bibtexm" style="display:none">-->
+
+<!--<pre><br />@inproceedings{xu2016multipaced,-->
+<!--  title={Multi-Paced Dictionary Learning for Cross-Domain Retrieval and Recognition},-->
+<!--  author={Xu, Dan and Song, Jingkuan and Alameda-Pineda Xavier and Ricci, Elisa and Sebe, Nicu},-->
+<!--  booktitle={the 23rd International Conference on Pattern Recognition (ICPR)},-->
+<!--  year={2016}-->
+<!--}<br /><br /></pre>-->
+
+<!--            </div>-->
+<!--        -->
+<!--    </body>-->
+<!--</html>-->
+<!--</div>-->
+
+
+
+<!--</div>-->
+
+
+<!--					-->
+<!--				</td>			</tr>-->
+<!--		</tbody>-->
+<!--	</table>-->
+<!--</div></div></div>-->
+
+<!--<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--	<table class="wsite-multicol-table">-->
+<!--		<tbody class="wsite-multicol-tbody">-->
+<!--			<tr class="wsite-multicol-tr">-->
+<!--				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div><div class="wsite-image wsite-image-border-none" style="padding-top:0px;padding-bottom:13px;margin-left:0px;margin-right:0px;text-align:center">-->
+<!--<a>-->
+<!--<img src="uploads/2016/mm_orig.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--</a>-->
+<!--<div style="display:block;font-size:90%"></div>-->
+<!--</div></div>-->
+
+
+<!--					-->
+<!--				</td>				<td class="wsite-multicol-col" style="width:74.338624338624%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div class="paragraph"><font size="3"><strong>Academic Coupled Dictionary Learning for Sketch Based Image Retrieval</strong><br /><strong>Dan Xu</strong>,&nbsp;<span style="color:rgb(63, 63, 63)">Xavier Alameda-Pineda,&nbsp;Jingkuan Song, Elisa Ricci, Nicu Sebe<br />ACM International Conference on Multimedia (<em><strong>ACM MM</strong></em>), 2016, Amsterdam, Netherland<br />&#8203;(</span><strong><font color="#a82e2e">Oral Presentation</font></strong><span style="color:rgb(63, 63, 63)">)</span></font></div>-->
+
+<!--<div><div id="280814853235024067" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>-->
+<!--    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>-->
+<!--        <title>Javascript test1</title>-->
+<!--        <script type="text/javascript" language="javascript">-->
+<!--            window.addEventListener("load", func3);-->
+<!--            function func3()-->
+<!--            {-->
+<!--                var field = document.getElementById("fielda");            -->
+<!--                var output = document.getElementById("outputa");-->
+<!--                var bibtex = document.getElementById("bibtexa");-->
+<!--                                     -->
+<!--                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                field.onblur = function() { output.innerHTML = ""; };-->
+<!--                output.onblur = function() { output.innerHTML = ""; };-->
+<!--                             -->
+<!--            };-->
+<!--        </script>-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        -->
+<!--            <button id="fielda" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1a" type="text" style="font-size : 13px" tabindex="-1"><a href="https://xavirema.eu/wp-content/papercite-data/pdf/Xu-ACMMM-2016.pdf" style="color:blue" target="_blank">PDF</a> </button>-<button id="field2a" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="sbir_code.html" style="color:blue" target="_blank">Project</button>-->
+<!--            <div id="outputa" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>-->
+<!--            <div id="bibtexa" style="display:none">-->
+
+<!--<pre><br />@inproceedings{xu2016academic,-->
+<!--  title={Academic Coupled Dictionary Learning for Sketch-based Image Retrieval},-->
+<!--  author={Xu, Dan and Alameda-Pineda, Xavier and Song, Jingkuan and Ricci, Elisa and Sebe, Nicu},-->
+<!--  booktitle={Proceedings of the 2016 ACM on Multimedia Conference},-->
+<!--  pages={1326&#45;&#45;1335},-->
+<!--  year={2016},-->
+<!--  organization={ACM}-->
+<!--}<br /><br /></pre>-->
+<!--           -->
+<!--	 </div>-->
+<!--        -->
+<!--    </body>-->
+<!--</html></div>-->
+
+
+
+<!--</div>-->
+
+
+<!--					-->
+<!--				</td>			</tr>-->
+<!--		</tbody>-->
+<!--	</table>-->
+<!--</div></div></div>-->
+
+<!--<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--	<table class="wsite-multicol-table">-->
+<!--		<tbody class="wsite-multicol-tbody">-->
+<!--			<tr class="wsite-multicol-tr">-->
+<!--				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div><div class="wsite-image wsite-image-border-none" style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:right">-->
+<!--<a>-->
+<!--<img src="uploads/2015/bmvc_1_orig.jpeg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--</a>-->
+<!--<div style="display:block;font-size:90%"></div>-->
+<!--</div></div>-->
+
+
+<!--					-->
+<!--				</td>				<td class="wsite-multicol-col" style="width:74.338624338624%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div id="2015" class="paragraph" style="text-align:left;"><font size="3"><strong>Learning Deep Representations of Appearance and Motion for Anomalous Event Detection</strong><br /><strong>Dan Xu</strong>, Elisa Ricci, Yan Yan, Jingkuan Song, Nicu Sebe<br />British Machine Vision Conference (<em><strong>BMVC</strong></em>), 2015, Swansea, UK <br />&#8203;(<font color="#a82e2e"><strong><font>Oral Presentation</font></strong><strong>, 7% acceptance rate</strong></font>)&nbsp;</font></div>-->
+
+<!--<div><div id="338823115548451743" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>-->
+<!--    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>-->
+<!--        <title>Javascript test1</title>-->
+<!--        <script type="text/javascript" language="javascript">-->
+<!--            window.addEventListener("load", func4);-->
+<!--            function func4()-->
+<!--            {-->
+<!--                var field = document.getElementById("fieldlbmvc");            -->
+<!--                var output = document.getElementById("outputlbmvc");-->
+<!--                var bibtex = document.getElementById("bibtexlbmvc");-->
+<!--                                     -->
+<!--                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                field.onblur = function() { output.innerHTML = ""; };-->
+<!--                output.onblur = function() { output.innerHTML = ""; };-->
+<!--                             -->
+<!--            };-->
+<!--        </script>-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        -->
+<!--            <button id="fieldlbmvc" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1lbmvc" type="text" style="font-size : 13px" tabindex="-1"><a href="https://arxiv.org/pdf/1510.01553v1.pdf" style="color:blue" target="_blank">PDF</a> </button>-<button id="field2lbmvc" type="text" style="font-size : 13px; color:blue" tabindex="-1"><a href="https://drive.google.com/open?id=0Bzsd7piwao-ORU5mOWJNTkNqMkE" style="color:blue" target="_blank">ROC Data</a></button>-->
+<!--            <div id="outputlbmvc" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>-->
+<!--            <div id="bibtexlbmvc" style="display:none">-->
+<!--          -->
+<!--<pre><br />@article{xu2015learning,-->
+<!--  title={Learning deep representations of appearance and motion for anomalous event detection},-->
+<!--  author={Xu, Dan and Ricci, Elisa and Yan, Yan and Song, Jingkuan and Sebe, Nicu},-->
+<!--  booktitle={British Machine Vision Conference (BMVC)},-->
+<!--  year={2015}-->
+<!--}<br /><br /></pre>-->
+
+<!--	 </div>-->
+<!--        -->
+<!--    </body>-->
+<!--</html>-->
+<!--</div>-->
+
+
+
+<!--</div>-->
+
+
+<!--					-->
+<!--				</td>			</tr>-->
+<!--		</tbody>-->
+<!--	</table>-->
+<!--</div></div></div>-->
+
+<!--<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--	<table class="wsite-multicol-table">-->
+<!--		<tbody class="wsite-multicol-tbody">-->
+<!--			<tr class="wsite-multicol-tr">-->
+<!--				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div><div class="wsite-image wsite-image-border-none" style="padding-top:0;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">-->
+<!--<a>-->
+<!--<img src="uploads/2015/6056385_orig.jpeg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--</a>-->
+<!--<div style="display:block;font-size:90%"></div>-->
+<!--</div></div>-->
+
+
+<!--					-->
+<!--				</td>				<td class="wsite-multicol-col" style="width:74.338624338624%; padding:0 15px;">-->
+<!--					-->
+<!--						-->
+
+<!--<div class="paragraph" style="text-align:left;"><font size="3"><strong>A Novel Hand&nbsp;Posture&nbsp;Recognition System Based on Sparse Representation Using Color and Depth Images</strong><br /><strong>Dan Xu</strong>, Yen-Lun Chen, Xinyu Wu, Wei Feng, Huihuan Qian and Yangsheng Xu<br />IEEE/RSJ International&nbsp;Conference on Intelligent Robots and Systems (<em><strong>IROS</strong></em>), 2013, Tokyo, Japan <br />&#8203;(<strong><font color="#a82e2e">Oral Presentation</font></strong>)</font></div>-->
+
+<!--<div><div id="346749234286517180" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>-->
+<!--    <head><script src="gdpr/gdprscript.js?buildTime=1234"></script>-->
+<!--        <title>Javascript test1</title>-->
+<!--        <script type="text/javascript" language="javascript">-->
+<!--            window.addEventListener("load", func5);-->
+<!--            function func5()-->
+<!--            {-->
+<!--                var field = document.getElementById("fieldiros");            -->
+<!--                var output = document.getElementById("outputiros");-->
+<!--                var bibtex = document.getElementById("bibtexiros");-->
+<!--                                     -->
+<!--                field.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                output.onfocus = function() { output.innerHTML = bibtex.innerHTML;};-->
+<!--                field.onblur = function() { output.innerHTML = ""; };-->
+<!--                output.onblur = function() { output.innerHTML = ""; };-->
+<!--                             -->
+<!--            };-->
+<!--        </script>-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        -->
+<!--            <button id="fieldiros" type="text" style="font-size : 13px; color:blue" tabindex="-1">BibTex</button>-<button id="field1iros" type="text" style="font-size : 13px" tabindex="-1"><a href="https://www.researchgate.net/profile/Dan_Xu17/publication/259894430_A_novel_hand_posture_recognition_system_based_on_sparse_representation_using_color_and_depth_images/links/00b4952e76834a6dcb000000.pdf" style="color:blue" target="_blank">PDF</a> </button>-->
+<!--            <div id="outputiros" style="background:#E7ECEF; border:3px; border-color: black; overflow:auto" tabindex="-1"></div>-->
+<!--            <div id="bibtexiros" style="display:none">-->
+<!--          -->
+<!--<pre><br />@inproceedings{xu2013novel,-->
+<!--  title={A novel hand posture recognition system based on sparse representation using color and depth images},-->
+<!--  author={Xu, Dan and Chen, Yen-Lun and Wu, Xinyu and Feng, Wei and Qian, Huihuan and Xu, Yangsheng},-->
+<!--  booktitle={2013 IEEE/RSJ International Conference on Intelligent Robots and Systems},-->
+<!--  pages={3765&#45;&#45;3770},-->
+<!--  year={2013},-->
+<!--  organization={IEEE}-->
+<!--}<br /><br /></pre>-->
+<!--	 </div>-->
+<!--        -->
+<!--    </body>-->
+<!--</html></div>-->
+</td></tr>
+</tbody>
+</table>
+</div></div></div>
+
+
+<!--journal parts start-->
+<!--<div><div style="height: 10px; overflow: hidden; width: 100%;"></div>-->
+<!--<hr class="styled-hr" style="width:100%;"></hr>-->
+<!--<div style="height: 10px; overflow: hidden; width: 100%;"></div></div>-->
+
+<!--<div id="Journal" class="paragraph"><strong><font size="4">Vision based Perception:</font></strong></div>-->
+<!--&lt;!&ndash;<p><strong><font size="3">[<a href="#2021j">2021</a>]-[<a href="#2020j">2020</a>]-[<a href="#2019j">2019</a>]-[<a href="#2018j">2018</a>]-[<a href="#2017j">2017</a>]</font></strong></p>&ndash;&gt;-->
+
+
+<!--<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--	<table class="wsite-multicol-table">-->
+<!--		<tbody class="wsite-multicol-tbody">-->
+<!--			<tr class="wsite-multicol-tr">-->
+<!--				<td class="wsite-multicol-col" style="width:18.768535262206%; padding:0 15px;">-->
+
+<!--&lt;!&ndash;sample starts-&ndash;&gt;-->
+
+<!--	<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--		<table class="wsite-multicol-table">-->
+<!--			<tbody class="wsite-multicol-tbody">-->
+<!--				<tr class="wsite-multicol-tr">-->
+<!--					<td class="wsite-multicol-col" style="width:15.768535262206%; height:0.768535262206%; padding:0 15px;">-->
+<!--								-->
+<!--	<div><div class="wsite-image wsite-image-border-none" style="padding-top:0px;padding-bottom:0px;margin-left:0;margin-right:0;text-align:center">-->
+<!--	<a>-->
+<!--	<img src="uploads/journal/TNNLS_2021.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--	</a>-->
+<!--	<div style="display:block;font-size:90%"></div>-->
+<!--	</div></div>-->
+<!--					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; height:4.231464737794%;padding:0 15px;">-->
+<!--						<div id="2021j" class="paragraph"><font size="3"><span><strong>AttentionGAN: Unpaired Image-to-Image Translation using Attention-Guided Generative Adversarial Networks</strong><br/>Hao Tang, <strong>Dan Xu</strong>, Philip H.S. Torr, Nicu Sebe<br/>IEEE Transactions on Neural Networks and Learning Systems (<em><strong>T-NNLS</strong></em>), 2021. [<a href="https://arxiv.org/abs/1911.11897" target="_blank">PDF</a>]-[<a href="https://github.com/Ha0Tang/AttentionGAN" target="_blank">Github</a>] </div>-->
+<!--</td></tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--</div></div></div>-->
+<!--&lt;!&ndash;sample end-&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;sample start-&ndash;&gt;-->
+<!--</td></tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--</div></div></div>-->
+
+<!--	<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--		<table class="wsite-multicol-table">-->
+<!--			<tbody class="wsite-multicol-tbody">-->
+<!--				<tr class="wsite-multicol-tr">-->
+<!--					<td class="wsite-multicol-col" style="width:15.768535262206%; padding:0 15px;">-->
+<!--								-->
+<!--	<div><div class="wsite-image wsite-image-border-none" style="padding-top:0px;padding-bottom:0px;margin-left:0;margin-right:0;text-align:center">-->
+<!--	<a>-->
+<!--	<img src="uploads/journal/TPMAI2020_PGA.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--	</a>-->
+<!--	<div style="display:block;font-size:90%"></div>-->
+<!--	</div></div>-->
+<!--					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">-->
+<!--						<div id='2020j' class="paragraph" style="text-align:left;"><font size="3"><span><strong>Probabilistic Graph Attention Networks for Pixel-Wise Dense Prediction</strong><br/><strong>Dan Xu</strong>, Xavier Alameda-Pineda, Wanli Ouyang, Elisa Ricci, Xiaogang Wang, and Nicu Sebe<br/>IEEE Transactions on Pattern Analysis and Machine Intelligence (<em><strong>T-PAMI</strong></em>), 2021. (in press) [<a href="https://arxiv.org/abs/1909.07667d9" target="_blank">PDF</a>]</div>-->
+
+<!--</td></tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--</div></div></div>-->
+<!--&lt;!&ndash;sample ends-&ndash;&gt;-->
+
+<!--&lt;!&ndash;sample start-&ndash;&gt;-->
+<!--</td></tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--</div></div></div>-->
+
+<!--	<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--		<table class="wsite-multicol-table">-->
+<!--			<tbody class="wsite-multicol-tbody">-->
+<!--				<tr class="wsite-multicol-tr">-->
+<!--					<td class="wsite-multicol-col" style="width:15.768535262206%; padding:0 15px;">-->
+<!--								-->
+<!--	<div><div class="wsite-image wsite-image-border-none" style="padding-top:0px;padding-bottom:0px;margin-left:0;margin-right:0;text-align:center">-->
+<!--	<a>-->
+<!--	<img src="uploads/journal/tpami_progressive.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--	</a>-->
+<!--	<div style="display:block;font-size:90%"></div>-->
+<!--	</div></div>-->
+<!--					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">-->
+<!--						<div id='2019j' class="paragraph" style="text-align:left;"><font size="3"><span><strong>Progressive Fusion for Unsupervised Binocular Depth Estimation using Cycled Networks</strong><br/>Andrea Pilzer, Stephane Lathuiliere, <strong>Dan Xu</strong>, Mihai Puscas, Elisa Ricci, Nicu Sebe<br/>IEEE Transactions on Pattern Analysis and Machine Intelligence (<em><strong>T-PAMI</strong></em>), 2019. (in press) [<a href="https://arxiv.org/abs/1909.07667" target="_blank">PDF</a>]</div>-->
+
+<!--</td></tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--</div></div></div>-->
+<!--&lt;!&ndash;sample ends-&ndash;&gt;-->
+
+<!--&lt;!&ndash;sample starts-&ndash;&gt;-->
+
+<!--	<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--		<table class="wsite-multicol-table">-->
+<!--			<tbody class="wsite-multicol-tbody">-->
+<!--				<tr class="wsite-multicol-tr">-->
+<!--					<td class="wsite-multicol-col" style="width:15.768535262206%; padding:0 15px;">-->
+<!--								-->
+<!--	<div><div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">-->
+<!--	<a>-->
+<!--	<img src="uploads/journal/tpami_monocular.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--	</a>-->
+<!--	<div style="display:block;font-size:90%"></div>-->
+<!--	</div></div>-->
+<!--					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">-->
+<!--						<div id="2018j" class="paragraph"><font size="3"><span><strong>Monocular Depth Estimation using Multi-Scale Continuous CRFs as Sequential Deep Networks</strong><br/><strong>Dan Xu</strong>, Wanli Ouyang, Elisa Ricci, Xiaogang Wang, Nicu Sebe<br/>IEEE Transactions on Pattern Analysis and Machine Intelligence (<em><strong>T-PAMI</strong></em>), 2018. [<a href="https://arxiv.org/abs/1803.00891" target="_blank">PDF</a>]</div>-->
+
+<!--</td></tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--</div></div></div>-->
+<!--&lt;!&ndash;sample end-&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;sample starts-&ndash;&gt;-->
+
+<!--	<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--		<table class="wsite-multicol-table">-->
+<!--			<tbody class="wsite-multicol-tbody">-->
+<!--				<tr class="wsite-multicol-tr">-->
+<!--					<td class="wsite-multicol-col" style="width:15.768535262206%; height:0.768535262206%; padding:0 15px;">-->
+<!--								-->
+<!--	<div><div class="wsite-image wsite-image-border-none" style="padding-top:0px;padding-bottom:0px;margin-left:0;margin-right:0;text-align:center">-->
+<!--	<a>-->
+<!--	<img src="uploads/journal/TMM_weiwang_2019.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--	</a>-->
+<!--	<div style="display:block;font-size:90%"></div>-->
+<!--	</div></div>-->
+<!--					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; height:4.231464737794%;padding:0 15px;">-->
+<!--						<div id="2019j" class="paragraph"><font size="3"><span><strong>Learning How to Smile: Expression Video Generation with Conditional Adversarial Recurrent Nets</strong><br/>Wei Wang, Xavier Alameda-Pineda, <strong>Dan Xu</strong>, Elisa Ricci, Nicu Sebe<br/>IEEE Transactions on Multimedia (<em><strong>T-MM</strong></em>), 2019. [<a href="https://ieeexplore.ieee.org/document/8948254" target="_blank">PDF</a>] </div>-->
+<!--</td></tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--</div></div></div>-->
+<!--&lt;!&ndash;sample end-&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;sample starts-&ndash;&gt;-->
+
+<!--	<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--		<table class="wsite-multicol-table">-->
+<!--			<tbody class="wsite-multicol-tbody">-->
+<!--				<tr class="wsite-multicol-tr">-->
+<!--					<td class="wsite-multicol-col" style="width:15.768535262206%; padding:0 15px;">-->
+<!--								-->
+<!--	<div><div class="wsite-image wsite-image-border-none" style="padding-top:0px;padding-bottom:0px;margin-left:0;margin-right:0;text-align:center">-->
+<!--	<a>-->
+<!--	<img src="uploads/journal/tip_cross.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--	</a>-->
+<!--	<div style="display:block;font-size:90%"></div>-->
+<!--	</div></div>-->
+<!--					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">-->
+<!--						<div id="2017j" class="paragraph"><font size="3"><span><strong>Cross-Paced Representation Learning with Partial Curricula for Sketch-based Image Retrieval</strong><br/><strong>Dan Xu</strong>, Xavier Alameda Pineda, Jingkuan Song, Elisa Ricci, Nicu Sebe<br/>IEEE Transactions on Image Processing (<em><strong>T-IP</strong></em>), 2017. [<a href="https://arxiv.org/abs/1803.01504" target="_blank">PDF</a>] </div>-->
+
+<!--</td></tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--</div></div></div>-->
+<!--&lt;!&ndash;sample end-&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;sample starts-&ndash;&gt;-->
+
+<!--	<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--		<table class="wsite-multicol-table">-->
+<!--			<tbody class="wsite-multicol-tbody">-->
+<!--				<tr class="wsite-multicol-tr">-->
+<!--					<td class="wsite-multicol-col" style="width:15.768535262206%; height:0.768535262206%; padding:0 15px;">-->
+<!--								-->
+<!--	<div><div class="wsite-image wsite-image-border-none" style="padding-top:0px;padding-bottom:0px;margin-left:0;margin-right:0;text-align:center">-->
+<!--	<a>-->
+<!--	<img src="uploads/journal/TMM_2017.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--	</a>-->
+<!--	<div style="display:block;font-size:90%"></div>-->
+<!--	</div></div>-->
+<!--					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; height:4.231464737794%;padding:0 15px;">-->
+<!--						<div class="paragraph"><font size="3"><span><strong>Supervised Local Descriptor Learning for Human Action Recognition</strong><br/>Xiantong Zhen, Feng Zheng, Ling Shao, Xianbin Cao, <strong>Dan Xu</strong><br/>IEEE Transactions on Multimedia (<em><strong>T-MM</strong></em>), 2017. [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7915781" target="_blank">PDF</a>] </div>-->
+<!--</td></tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--</div></div></div>-->
+<!--&lt;!&ndash;sample end-&ndash;&gt;-->
+
+<!--&lt;!&ndash;sample starts-&ndash;&gt;-->
+<!--	<div class="wsite-spacer" style="height:10px;"></div>-->
+
+<!--	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">-->
+<!--		<table class="wsite-multicol-table">-->
+<!--			<tbody class="wsite-multicol-tbody">-->
+<!--				<tr class="wsite-multicol-tr">-->
+<!--					<td class="wsite-multicol-col" style="width:15.768535262206%; padding:0 15px;">-->
+<!--								-->
+<!--	<div><div class="wsite-image wsite-image-border-none" style="padding-top:0px;padding-bottom:0px;margin-left:0;margin-right:0;text-align:center">-->
+<!--	<a>-->
+<!--	<img src="uploads/journal/cviu_detecting.jpg" loading="lazy" alt="Picture" style="width:auto;max-width:100%" />-->
+<!--	</a>-->
+<!--	<div style="display:block;font-size:80%"></div>-->
+<!--	</div></div>-->
+<!--					</td>				<td class="wsite-multicol-col" style="width:74.231464737794%; padding:0 15px;">-->
+<!--						<div class="paragraph"><font size="3"><span><strong>Detecting Anomalous Events in Videos by Learning Deep Representations of Appearance and Motion</strong><br/><strong>Dan Xu</strong>, Yan Yan, Elisa Ricci, Nicu Sebe<br/>Computer Vision and Image Understanding (<em><strong>CVIU</strong></em>), 2017. [<a href="https://www.sciencedirect.com/science/article/pii/S1077314216301618" target="_blank">PDF</a>]</div>-->
+
+<!--</td></tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--</div></div></div>-->
+<!--sample end--->
+
+<!--journal parts end--->
+
+<!--<div><div style="height: 10px; overflow: hidden; width: 100%;"></div>-->
+<!--<hr class="styled-hr" style="width:100%;"></hr>-->
+<!--<div style="height: 10px; overflow: hidden; width: 100%;"></div></div>-->
+
+<!--<div class="paragraph" style="text-align:center;"><font size="2"><font color="#626262">&copy; 2015 by Dan Xu. All Rights Reserved.<strong>&nbsp;</strong>L</font><span style=""><font color="#626262">ast Modified: 08/07/2015</font></span></font><font size="2"><span style=""><br /></span></font></div>-->
+
+<!--<div><div id="973426107240231346" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml">&lt;!&ndash; Start of StatCounter Code for Default Guide &ndash;&gt;-->
+<!--<script type="text/javascript">-->
+<!--var sc_project=10627532; -->
+<!--var sc_invisible=0; -->
+<!--var sc_security="4bf6f1aa"; -->
+<!--var scJsHost = (("https:" == document.location.protocol) ?-->
+<!--"https://secure." : "https://www.");-->
+<!--document.write("<sc"+"ript type='text/javascript' src='" +-->
+<!--scJsHost+-->
+<!--"statcounter.com/counter/counter.js'></"+"script>");-->
+<!--</script>-->
+<!--<noscript><div class="statcounter"><a title="shopify stats"-->
+<!--href="https://statcounter.com/shopify/" target="_blank"><img-->
+<!--class="statcounter"-->
+<!--src="https://c.statcounter.com/10627532/0/4bf6f1aa/0/"-->
+<!--alt="shopify stats"></a></div></noscript>-->
+
+<!--<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=fcfbff&w=150&t=n&d=3eBmi1qebjNIRpKdLeuKOzZQKM1GqN3tshV3B4UD_yk&co=0b4975&cmo=3acc3a&cmn=ff5353&ct=cdd4d9'></script>-->
+<!--&lt;!&ndash; End of StatCounter Code for Default Guide &ndash;&gt;</div>-->
+
+
+
+<!--</div>-->
+<!--</div>-->
+
+<!--			<div class="clear"></div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div id="footer">-->
+<!--		<div id="footer-right">-->
+<!--			Create a <a target="_top" href="https://www.robots.ox.ac.uk/~danxu">free web site</a> with <a target="_top" href="https://www.robots.ox.ac.uk/~danxu/" title="бесплатный сайт">Weebly</a>-->
+<!--		</div>-->
+<!--		<div class="clear"></div>-->
+<!--	</div>-->
+<!--</div>-->
+<!--    <div id="customer-accounts-app"></div>-->
+<!--    <script src="https://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1234"></script>-->
+
+<!--		-->
+<!--	</body>-->
+	<div><div style="height: 10px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 5px; overflow: hidden; width: 100%;"></div></div>
+</html>

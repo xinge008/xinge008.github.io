@@ -1,20 +1,472 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Xinge Zhu - Homepage</title>
+<meta name="description" content="Dr. Xinge Zhu, PhD in MMLab, the Chinese University of Hong Kong" />
+<meta name="keywords" content="Xinge Zhu; MMLab; CUHK; Computer vision; Machine Learning; CVPR; ICCV; Scene Understanding; 3D" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-<div class="main-post-list hidden">
+		<meta name="google-site-verification" 
+content="H_f9Itsrdoc8WY1KDH1nc6DQ1-6e_Q23MLPGBO0arHA" />
 
-  <ol class="post-list">
-    {% for post in paginator.posts %}
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
-      <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
-      <div class="post-list__meta"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.tags }}</span><a class="btn-border-small" href={{ post.url }}>继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-    {% endfor %}
-  </ol>
+<script type="text/javascript">
+var timeKeeper;
 
-  {% include pagination.html %}
+$('#menu').click(function()
+{
+    $('#bibtex').show();
+});
+
+$('#bibtex').click(function()
+{
+    clearTimeout(timeKeeper);                  
+});
+
+$('#menu').focusout(function()
+{
+    timeKeeper = setTimeout(function() {$('#bibtex').hide()}, 150);
+});
+
+$('#menu').attr('tabIndex', -1);
+$('#bibtex').hide();
+</script>
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="https://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="https://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1530535589" title="wsite-theme-css" />
+
+<link href='https://fonts.googleapis.com/css?family=Yantramanav:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:"Times New Roman" !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:"Times New Roman" !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {color:#515151 !important;}
+.wsite-not-footer h2.wsite-content-title a, .wsite-not-footer .paragraph a, .wsite-not-footer blockquote a, #blogTable .blog-sidebar a, #blogTable .blog-comments a, #blogTable .blog-comments-bottom a, #wsite-com-store a, #wsite-com-product-gen a {color:#052ef3 !important;}
+.wsite-menu-default a {font-family:"Yantramanav" !important;text-transform:  none !important;letter-spacing: 0px !important;}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+.wsite-not-footer h2.wsite-content-title a:hover, .wsite-not-footer .paragraph a:hover, .wsite-not-footer blockquote a:hover, #blogTable .blog-sidebar a:hover, #blogTable .blog-comments a:hover, #blogTable .blog-comments-bottom a:hover, #wsite-com-store a:hover, #wsite-com-product-gen a:hover {color:#8d2424 !important;}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {line-height:20px !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-size:16px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {font-size:22px !important;}
+.wsite-menu-default a {font-size:15.5px !important;}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}
+
+.navlist
+{
+list-style-type: none;
+padding-left: 0px;
+background-image: url(uploads/logo/new_2.jpg);
+background-repeat: no-repeat;
+background-size: 25px;
+}
+
+</style>
+
+		<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="https://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="https://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.storeCountry = "NL";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "100730443961222929";
+			com_userID = "30604459";</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="https://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"> window._W = window._W || {}; _W.showV2Footer = 0; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"871451071371970207","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},
+				{"id":"605036677414579077","title":"Publications","url":"https:\/\/publications.html","target":"","nav_menu":false,"nonclickable":false}
+				{"id":"605036677414579107","title":"Research","url":"https:\/\/projects.html","target":"","nav_menu":false,"nonclickable":false}
+				{"id":"605036677414579097","title":"Activities","url":"https:\/\/activities.html","target":"","nav_menu":false,"nonclickable":false}
+
+				],
+			"871451071371970207",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class=" no-header-page  wsite-theme-light  wsite-page-index"><div id="container">
+	<table id="header">
+		<tr>
+			<td id="logo"><span class="wsite-logo">
+
+	
+	<span class="wsite-title-placeholder">&nbsp;</span><span style="display:none">
+	<span style="display:none">'s Research Page!</span>
+	</span>
+	
+
+</span></td>
+			<td id="header-right">
+				<table>
+					<tr>
+						<td class="phone-number"></td>
+						<td class="social"></td>
+						<td class="search"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<div id="navigation">
+		<div id="nav-r">
+			<div id="nav-content">
+				<ul class="wsite-menu-default">
+						<li id="active" class="wsite-menu-item-wrap">
+							<a
+										href="index.html"
+								class="wsite-menu-item"
+								>
+								Home
+							</a>
+							
+						</li>
+						<li id="pg605036677414579077" class="wsite-menu-item-wrap">
+							<a
+										href="publications.html"
+								class="wsite-menu-item"
+								>
+								Publications
+							</a>
+							
+						</li>
+						<li id="pg605036677414579097" class="wsite-menu-item-wrap">
+							<a
+										href="activity.html"
+								class="wsite-menu-item"
+								>
+								Activities
+							</a>
+							
+						</li>
+
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div id="main">
+		<div id="banner-bot">
+			<div id="banner-top">
+				<div id="banner">
+					<div class="wsite-header"></div>
+					<em id="tl"></em>
+					<em id="tr"></em>
+					<em id="bl"></em>
+					<em id="br"></em>
+				</div>
+			</div>
+		</div>
+		
+<div id="content">
+<div id="wsite-content" class="wsite-elements wsite-not-footer">
+<div class="wsite-multicol">
+	<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+<table class="wsite-multicol-table">
+<tbody class="wsite-multicol-tbody">
+<tr class="wsite-multicol-tr">
+<td class="wsite-multicol-col" style="width:33.818493150685%; padding:0 15px;">
+							
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:0px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/new/zxg_css/self.jpeg" alt="Picture" style="width:auto;max-width:70%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+					
+</td>				
+<td class="wsite-multicol-col" style="width:66.181506849315%; padding:0 15px;">
+<div class="paragraph" style="text-align:left;"><br />
+	<font size="6">&#8203;</font>
+	<strong><font size="5">Xinge Zhu&nbsp;</font></strong><br /><br />
+	<font size="3"><strong>PhD</strong> </font><br />
+	<a href="https://mmlab.ie.cuhk.edu.hk/" target="_blank">MMLab, CUHK</a>
+	<p>
+                <a href="https://scholar.google.com.hk/citations?user=yHAcRooAAAAJ"> Google Scholar </a> /
+                <a href="https://github.com/xinge008"> Github </a>
+	</p>
+	<strong>Email:&nbsp;</strong> zhuxinge123 at gmail.com</font>
+</div>
+</td>			
+</tr>
+</tbody>
+</table>
 
 </div>
+</div>
+
+<div>
+<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 5px; overflow: hidden; width: 100%;"></div>
+</div>
+
+<h2 class="wsite-content-title" style="text-align:left;"><font size="5">New Events</font></h2>
+
+
+<table class="wsite-multicol-table">
+<tbody class="wsite-multicol-tbody">
+<tr class="wsite-multicol-tr">
+<td class="wsite-multicol-col" style="width:100%; padding:0 0px;">
+<font size="3">
+<div class="paragraph" style="text-align:justify;max-height: 622px; overflow:auto; max-width: 9999999999px"> 
+    <li> 2021.11: <b style="color:red">NEW!!</b> <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Song_AdaStereo_A_Simple_and_Efficient_Approach_for_Adaptive_Stereo_Matching_CVPR_2021_paper.pdf">Extended version of AdaStereo</a> is accepted by <b>IJCV</b> </li>
+    <li> 2021.09: <a href="https://arxiv.org/abs/2104.10956">FCOS3D</a> got the best paper award on the <a href="https://sites.google.com/unitn.it/3dodi/home">ICCV 3DODI workshop</a>!
+	    <a href="https://github.com/open-mmlab/mmdetection3d/blob/master/configs/fcos3d/README.md"> Code </a> has been released </li>
+    <li> 2021.09: <a href="https://openaccess.thecvf.com/content/ICCV2021W/3DODI/papers/Wang_FCOS3D_Fully_Convolutional_One-Stage_Monocular_3D_Object_Detection_ICCVW_2021_paper.pdf">FCOS3D</a> is accepted by <b> 3DODI workshop, ICCV</b>. <a href="https://arxiv.org/pdf/2108.09663">SIDE</a> (Stereo 3D Detection) is accepted by <b>WACV2022</b>. <a href="https://arxiv.org/pdf/2107.14160">PGD</a> is accepted by <b>CoRL2021</b>;   </li>
+    <li> 2021.07: <a href="https://github.com/xinge008/Cylinder3D">Extended version of Cylinder3D</a> is accepted by <b>TPAMI</b> </li>
+    <li> 2021.03: Three papers are accepted by <b>CVPR2021</b> (1 Oral and 2 Poster). <a href="https://github.com/xinge008/Cylinder3D">Cylinder3D</a > is accepted as <b>Oral</b> presentation</li>
+    <li> 2020.12: Our team achieves the 2nd place in the challenge of <a href="https://www.nuscenes.org/lidar-segmentation/?externalData=all&mapData=all&modalities=Any"> nuScenes LiDAR segmentation</a > with <a href="https://github.com/xinge008/Cylinder3D">Cylinder3D</a >, and the best camera-only method in <a href="https://www.nuscenes.org/object-detection?externalData=all&mapData=all&modalities=Camera">nuScenes 3D detection</a > with <a href="https://arxiv.org/pdf/2107.14160">PGD</a > </li>
+    <li> 2020.11: We release the code of <a href="https://github.com/xinge008/Cylinder3D">Cylinder3D</a >, which achieves the <b>1st place</b> in the <a href="https://competitions.codalab.org/competitions/20331#results">leaderboard</a > of SemanticKITTI Semantic segmentation. Based on Cylinder3D, we also achieve the <b>1st place</b> in the  <a href="https://competitions.codalab.org/competitions/24025#results">leaderboard</a > of SemanticKITTI Panoptic segmentation.</li>
+    <li> 2020.09: Two papers were accepted by <b>CoRL2020</b>.</li>
+    <li> 2020.07: Three papers are accepted by <b>ECCV2020</b>.</li>
+<!-- 	<ul class="navlist"> -->
+<!--	<li><strong><font color="#a82e2e">I am looking for self-motivated Ph.D./MPhil. students, RAs, PostDocs, and Visiting scholars to join my group. Please drop me an email with your CV if you are interested.</font></strong>&nbsp;</li>&lt;!&ndash; </ul> &ndash;&gt;-->
+<!--	<ul class="navlist">	-->
+<!--	<li><strong>Sep. 16, 2021:</strong> I will chair the session of Deep Learning for Visual Perception at <a href= "https://www.iros2021.org/" target="_blank">IROS 2021</a>. Welcome to IROS 2021 online conference!</li>-->
+<!--	</ul>-->
+<!--	<ul class="navlist">	-->
+<!--	<li><strong>Jul. 27, 2021:</strong> I am invited to serve as a Senior Programme Committee (SPC) for <a href= "https://aaai.org/Conferences/AAAI-22/" target="_blank">AAAI 2022</a>. The deadline for submission is Sep. 08, 2021.</li>-->
+<!--	</ul>-->
+<!--	<ul class="navlist">	-->
+<!--	<li><strong>Jul. 22, 2021:</strong> Two papers including one ORAL (3% acceptance rate) have been accepted by <a href= "http://iccv2021.thecvf.com/home" target="_blank">ICCV 2021</a>. The papers and the code will be released soon.</li>-->
+<!--	</ul>-->
+<!--	<ul class="navlist">	-->
+<!--	<li><strong>Jul. 03, 2021:</strong> One paper on weakly-supervised video action localization has been accepted by <a href= "https://2021.acmmm.org/" target="_blank">ACM MM 2021</a>.</li>-->
+<!--	</ul>-->
+<!--	<ul class="navlist">	-->
+<!--	<li><strong>Jun. 30, 2021:</strong> One paper on deep visual SLAM has been accepted by <a href= "https://www.iros2021.org/" target="_blank">IROS 2021</a>.</li>-->
+<!--	</ul>-->
+<!--	<ul class="navlist">	-->
+<!--	<li><strong>Mar. 01, 2021:</strong> Two works have been accepted by <a href= "http://cvpr2021.thecvf.com/" target="_blank">CVPR 2021</a>.</li>-->
+<!--	</ul>-->
+<!--	<ul class="navlist">-->
+<!--	<li><strong>Feb. 25, 2021:</strong> I have been invited to serve as Area Chair (AC) for <a href= "https://2021.acmmm.org/" target="_blank">ACM MM 2021</a>.</li>-->
+<!--	</ul>-->
+<!--	<li><strong>Nov. 25, 2020:</strong> Our work "Probabilistic Graph Attention Networks for Pixel-Wise Dense Prediction" has been accepted by <a href= "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34" target="_blank">TPAMI 2021</a> as a regular paper.</li>-->
+<!--	&lt;!&ndash; <ul class="navlist"> &ndash;&gt;-->
+<!--	<li><strong>Sep. 09, 2020:</strong> I am appointed to serve as an Associate Editor (AE) for <a href= "https://www.springer.com/journal/371/editors" target="_blank">Springer Journal of the Visual Computer</a>, International Journal of Computer Graphics.</li>-->
+<!--	&lt;!&ndash; </ul> &ndash;&gt;-->
+<!--	&lt;!&ndash; <ul class="navlist"> &ndash;&gt;-->
+<!--	<li><strong>Jun. 15, 2020:</strong> Two papers (1 Oral and 1 Poster) are accepted by <a href="https://cvpr2020.thecvf.com" target="_blank">CVPR 2020</a>. The papers will come out soon.</li>-->
+<!--	&lt;!&ndash; </ul> &ndash;&gt;-->
+<!--	<li><strong>May. 25, 2020:</strong> I am invited to serve as an Area Chair (AC) for <a href= "https://2020.acmmm.org/" target="_blank">ACM MM 2020</a>.</li>-->
+<!--	</ul>-->
+<!--	<li><strong>May. 10, 2020:</strong> I am invited to serve as an Area Chair (AC) for <a href= "https://wacv2021.thecvf.com/home" target="_blank">WACV 2021</a>.</li>-->
+<!--	<li><strong>Mar. 10, 2020:</strong> I am invited to serve as Programme Committee member of <a href="https://nips.cc/Conferences/2020" target="_blank">NeurIPS 2020</a>.</li>-->
+<!--	<li><strong>Feb. 07, 2020:</strong> I am invited to serve as an Area Chair (AC) for <a href= "https://www.micc.unifi.it/icpr2020/" target="_blank">ICPR 2020</a>.</li>-->
+<!--	<li><strong>Aug. 18, 2019:</strong> Our "<a href= "https://arxiv.org/pdf/1908.06955.pdf" target="_blank">Dynamic Graph Message Passing Networks</a>" has been Arxived! It outperforms Non-Local Model with much lower FLOPs!</li>-->
+<!--	<li><strong>Aug. 10, 2019:</strong> Our work of using cycled networks for unsupervised binocular depth estimation has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34" target="_blank">TPAMI</a> as a regular paper.</li>-->
+<!--	<li><strong>Jul. 22, 2019:</strong> We have two papers accepted by <a href="https://iccv2019.thecvf.com" target="_blank">ICCV 2019</a>. The papers will come out soon.</li>-->
+<!--	<li><strong>Jul. 3, 2019:</strong> Our work ''Geometry-Aware Video Object Detection for Static Cameras'' has been accepted at <a href="https://bmvc2019.org/" target="_blank">BMVC 2019</a> as an ORAL.</li>-->
+<!--	<li><strong>Jul. 3, 2019:</strong> Our "Cycle in Cycle Generative Adversarial Networks for Keypoint-Guided Image Generation" is acepted at <a href="https://www.acmmm.org/2019/" target="_blank">ACM MM 2019</a> as an ORAL.</li>-->
+<!--	<li><strong>Mar. 3, 2019:</strong> Our work on Semantic Guided Cross-View Traslation is accepted at <a href="https://cvpr2019.thecvf.com/" target="_blank">CVPR 2019</a> as an oral. The <a href="https://disi.unitn.it/~hao.tang/project/SelectionGAN.html" target="_blank">project page</a> and GitHub <a href="https://github.com/Ha0Tang/SelectionGAN" target="_blank">code</a> are available now.</li>-->
+<!--	<li><strong>Aug. 1, 2018:</strong> The training and testing <a href="https://github.com/danxuhk/StructuredAttentionDepthEstimation" target="_blank">code</a> for Structured Attention Guided Convolutional Neural Fields for Monocular Depth Estimation is available.</li>-->
+<!--	<li><strong>Jun. 18, 2018:</strong> The <a href="https://github.com/dapengchen123/crf_affinity" target="_blank">code</a> for Group Consistent Similarity Learning via Deep CRFs for&nbsp;Person Re-Identification is available.</li>-->
+<!--	<li><strong>Jun. 1, 2018:</strong>&nbsp;One paper is accepted at <a href="https://www.acmmm.org/2018/" target="_blank">ACM MM 2018</a> as an oral.&nbsp;</li>-->
+<!--	<li><strong>Mar. 11, 2018:</strong>&nbsp;One paper is accepted at <a href="https://www.computer.org/web/tpami" target="_blank">TPAMI 2018</a> as a regular paper.&nbsp;</li>-->
+<!--	<li><strong>Feb. 02, 2018</strong>: Four&nbsp;papers including one oral and one spotlight&nbsp;are accepted at <a href="https://cvpr2018.thecvf.com/" target="_blank">CVPR 2018</a>.</li>-->
+<!--	<li><strong>Sep. 04, 2017: </strong>One paper is accepted at <a href="https://nips.cc/" target="_blank">NIPS 2017</a>&nbsp;which will be held in Long Beach, USA.<strong>&nbsp;</strong></li>-->
+<!--	<li><strong>Jul. 10, 2017: </strong>We published the <a href="https://github.com/danxuhk/ContinuousCRF-CNN" target="_blank">code</a> for continuous CRFs as sequential neural network associated with our CVPR 2017 spotlight paper on GitHub.</li>-->
+<!--	<li><strong>Mar. 10, 2017: </strong>The <a href="https://github.com/xavirema/lena_pooling" target="_blank">code</a> for learned Top-K Global Pooling published at CVPR 2017 is available on GitHub.</li>-->
+<!--	<li><strong>Feb.27th, 2017</strong>: One spotlight and two posters are accepted at <a href="https://cvpr2017.thecvf.com/" target="_blank">CVPR 2017</a>.</li>-->
+<!--	<li><strong>Dec. 6th, 2016:</strong>&nbsp;Our&nbsp;paper received the Best Scientific Paper Award at <a href="https://www.icpr2016.org/site/" target="_blank">ICPR 2016</a>.&nbsp;</li>-->
+	<!-- <li><strong><a href="events.html" target="_blank">More events ...</a></strong>&nbsp;</li> -->
+</div>
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div>
+<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 5px; overflow: hidden; width: 100%;"></div>
+</div>
+
+<!-- <div><div id="431877439594398809" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><a name="About Me">&nbsp</a></div>
+</div> -->
+
+<h2 class="wsite-content-title" style="text-align:left;"><font size="5">About Me</font></h2>
+
+<table class="wsite-multicol-table">
+<tbody class="wsite-multicol-tbody">
+<tr class="wsite-multicol-tr">
+<td class="wsite-multicol-col" style="width:100%; padding:0 0px;">
+<div class="paragraph" style="text-align:justify;"><font size="3">Greetings! My name is Xinge Zhu. I obtained my PhD degree at <a href="http://mmlab.ie.cuhk.edu.hk/"> Multimedia lab</a> in CUHK. My supervisor is <a href="http://dahua.me/">Prof. Dahua Lin</a>.
+	<p>My research lies at computer vision and deep learning, particularly in Scene Understanding and Perception, Point-cloud 3D Detection and Segmentation, etc. <br />
+	<p>During my PhD, I spent wonderful time at SenseTime, Baidu and Inceptio.
+	I also work closely with <a href="http://yuexinma.me/aboutme.html">Prof. Yuexin Ma</a>, <a href="https://scholar.google.com.hk/citations?user=yveq40QAAAAJ&hl=zh-CN">Prof. Ruiyang Yang</a>, <a href="https://scholar.google.com.hk/citations?user=mwsxrm4AAAAJ&hl=zh-CN">Dr. Jianping Shi</a>
+	and <a href="https://scholar.google.com.hk/citations?user=X08l_4IAAAAJ&hl=zh-CN">Prof. Dinesh Manocha</a>. </p>
+ </font></div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 5px; overflow: hidden; width: 100%;"></div>
+
+
+<h2 class="wsite-content-title"><font size="5">Selected Awards and Honors</font></h2>
+
+<table class="wsite-multicol-table">
+<tbody class="wsite-multicol-tbody">
+<tr class="wsite-multicol-tr">
+<td class="wsite-multicol-col" style="width:100%; padding:0 0px;">
+<div class="paragraph" style="text-align:justify;">
+<font size="3">
+<li><a href="https://www.nuscenes.org/object-detection?externalData=all&mapData=all&modalities=Camera"> nuScenes 3D Detection</a >, Best camera-only method (2020.12)</li>
+		<li><a href="https://www.nuscenes.org/lidar-segmentation?externalData=all&mapData=all&modalities=Any"> nuScenes LiDAR Segmentation</a >, 2nd place (2020.12)</li>
+		<li><a href="https://competitions.codalab.org/competitions/20331#results"> SemanticKITTI Semantic Segmentation</a >, Rank 1st (2020.11)</li>
+		<li><a href="https://competitions.codalab.org/competitions/24025#results">SemanticKITTI Panoptic Segmentation</a >, Rank 1st </li>
+		<li><a href="https://www.kaggle.com/c/3d-object-detection-for-autonomous-vehicles">Lyft 3D Detection Challenge</a >, Golden Medal (rank 4 among 500+ teams, 2019.7)</li>
+		<li><a href="https://eval.ai/web/challenges/challenge-page/356/overview">nuScenes 3D Detection Challenge</a >, Runner-up (rank 2 among 13 teams, 2019.3)</li>
+</font>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="height: 10px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 5px; overflow: hidden; width: 100%;"></div>
+
+
+<h2 class="wsite-content-title"><font size="5">Talks</font></h2>
+
+<table class="wsite-multicol-table">
+<tbody class="wsite-multicol-tbody">
+<tr class="wsite-multicol-tr">
+<td class="wsite-multicol-col" style="width:100%; padding:0 0px;">
+<div class="paragraph" style="text-align:justify;">
+<font size="3">
+	<li><strong>Talk at ShanghaiTech University about 2D and 3D Detection</Strong>, Spring 2021.</li>
+	<li><strong><a href="https://course.zhidx.com/c/MjUwZTQxODA4MDIwYzRkYmM1MDM="> Zhidx Open Talk about Large-scale Point-cloud Segmentation </a></Strong>, Summer 2021.</li>
+	<li><strong>Open Talk at JiangTech for CVPR 2021</Strong>, Summer 2021.</li>
+
+
+</font>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<div><div style="height: 10px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 10px; overflow: hidden; width: 100%;"></div></div>
+
+
+<!--<div class="paragraph" style="text-align:center;"><font size="2"><font color="#626262">&copy; 2015 by Xinge Zhu. All Rights Reserved.<strong>&nbsp;</strong>L</font><span style=""><font color="#626262">ast Modified: 08/07/2015</font></span></font><font size="2"><span style=""><br /></span></font></div>-->
+
+<!--<div><div id="973426107240231346" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml">&lt;!&ndash; Start of StatCounter Code for Default Guide &ndash;&gt;-->
+<!--<script type="text/javascript">-->
+<!--var sc_project=10627532; -->
+<!--var sc_invisible=0; -->
+<!--var sc_security="4bf6f1aa"; -->
+<!--var scJsHost = (("https:" == document.location.protocol) ?-->
+<!--"https://secure." : "https://www.");-->
+<!--document.write("<sc"+"ript type='text/javascript' src='" +-->
+<!--scJsHost+-->
+<!--"statcounter.com/counter/counter.js'></"+"script>");-->
+<!--</script>-->
+<!--<noscript><div class="statcounter"><a title="shopify stats"-->
+<!--href="https://statcounter.com/shopify/" target="_blank"><img-->
+<!--class="statcounter"-->
+<!--src="https://c.statcounter.com/10627532/0/4bf6f1aa/0/"-->
+<!--alt="shopify stats"></a></div></noscript>-->
+
+<!--<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=fcfbff&w=150&t=n&d=3eBmi1qebjNIRpKdLeuKOzZQKM1GqN3tshV3B4UD_yk&co=0b4975&cmo=3acc3a&cmn=ff5353&ct=cdd4d9'></script>-->
+<!--&lt;!&ndash; End of StatCounter Code for Default Guide &ndash;&gt;</div>-->
+
+
+<div id="footer">
+	<div id="footer-text"></div>
+</div>
+</a></div><a>
+
+<!-- <div id= "main">  -->
+<!-- <div align="center">
+ <script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0cpr08658kr&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+</div>  -->
+
+<div class="div-c">
+ <script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0cpr08658kr&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+</div>
+<div class="div-d">
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=259&t=t&d=vmqcHje_ExU5p4D1TgEPEkxwdYf0f2fFn71OecbbDTU&co=1e7acf'></script>
+</div>
+		
+	</body>
+</html>
